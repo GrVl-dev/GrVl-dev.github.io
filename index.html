@@ -1,35 +1,93 @@
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Мой сайтик</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reboot.css">
-</head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <title>V.Gryuger blog</title>
 </head>
 <body>
-   <header>
-       <div class="container">
-            <div class="header-content">
-                <h1 class="header-content__title">Титульник </h1>
-            </div>
-       </div>
-   </header>
-   <main>
-       <div class="container">
-            <div class="main-content">
-                Основное содержимое
-                <a href="https://translate.google.com/?hl=ru" target="blank">
-                    Этот текст тебя перенесет из ниоткуда в никуда
-                </a>
-            </div>           
-       </div>
-   </main>
-   <footer>
+  <header class="header">
+  <div class="container">
+      <div class="header__content">
+          <h1 class="header__logo">
+              VGryuger.ru
+          </h1>
+          <ul class="header__nav">
+              <li>
+                <a class="header__link italic" 
+                href="./index.html">Главная</a>
+              </li>
+              <li>
+                <a class="header__link" 
+                href="">История обо мне</a>
+              </li>
+              <li>
+                <a class="header__link" 
+                href="">Мой блог</a>
+              </li>
+              <li>
+                <a class="header__link" 
+                href="">Контакты</a>
+              </li>
+              <li>
+                <a class="header__link " 
+                href="./secondpage.html">Моя вторая страница</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</header>
+  <main>
+    <div class="infoblock">
         <div class="container">
-                <div class="footer-content">
-                    Тут футер
-                </div>           
+            <div class="infoblock__content">
+                <h2 class="infoblock__title">
+                        КРАТКАЯ ИНФОРМАЦИЯ ОБО МНЕ
+                </h2>
+                <p class="infoblock__text">
+                   Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                   elit. Praesent aliquam, justo convallis luctus rutrum, 
+                   erat nulla fermentum diam, at nonummy quam ante ac quam. 
+                   Maecenas urna purus, fermentum id, molestie in, commodo 
+                   porttitor, felis. Nam blandit quam ut lacus.
+                </p>
+            </div>
         </div>
-   </footer> 
+    </div>
+    <div class="contacts">
+    <div class="container">
+        <div class="contacts__content">
+            <h3 class="contacts__title">
+                КОНТАКТЫ
+            </h3>
+            <ul class="contacts__nav">
+                <li>
+                    <a class="contacts__link" 
+                    href="https://vk.com/" 
+                    target="blank">Ссылка на VK</a>
+                </li>
+                <li>
+                    <a class="contacts__link" 
+                    href="https://www.instagram.com/?hl=ru" 
+                    target="blank">Ссылка на Instagram</a>
+                </li>
+                <li>
+                    <a class="contacts__link" 
+                    href="tel:+79376611570">Номер сотового</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            &copy; 2019. VGryuger.ru
+        </div>
+    </div>
+</footer>
 </body>
+<script src="script.js"></script>
 </html>
