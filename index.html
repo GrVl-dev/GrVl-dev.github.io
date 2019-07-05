@@ -3,33 +3,34 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-  <title>Главная VGryuger.ru</title>
+  <title>Главная | VGryuger.ru</title>
 </head>
 <body>
   <header class="header">
   <div class="container">
       <div class="header__content">
         <a class="header__logo" href="./index.html"></a>
-        <div class="nav">
+        <nav class="nav">
     <a class="nav__link" 
     href="./index.html">Главная</a>
     <a class="nav__link"
     href="./my-blog.html">Мой блог</a>
     <a class="nav__link" 
-    href="#">Подробнее обо мне</a>
-</div>
+    href="./about-me.html">Подробнее обо мне</a>
+</nav>
       </div>
   </div>
 </header>
-  <main>
-    <div class="info-block">
+  <section class="info-block">
     <div class="container">
-        <div class="info-block__content">
+        <article class="info-block__content">
             <h1 class="info-block__title">
               ОБО МНЕ
             </h1>
             <div class="info-block__article">
-                <div class="info-block__foto"></div>
+                <div class="info-block__foto">
+                    <img src="./img/foto.png" alt="foto">
+                </div>
                 <div class="info-block__text">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing 
                     elit. Praesent aliquam, justo convallis luctus rutrum, 
@@ -48,15 +49,15 @@
                     <a class="info-block__button"  href="#">ПОДРОБНЕЕ</a>
                 </div>
             </div>
-        </div>
+        </article>
     </div>
-</div>
-    <div class="my-blog">
+</section>
+  <main class="my-blog">
     <div class="container">
         <div class="my-blog__content">
             <h1 class="my-blog__title">МОЙ БЛОГ</h1>
             <div class="my-blog__cards-box">
-                <div class="card">
+                <article class="card">
   <div class="card__foto"></div>
   <div class="card__title">СЕГОДНЯ ХОДИЛ В КЛУБ ЗАРЯ</div>
   <div class="card__content">
@@ -72,8 +73,8 @@
         <div class="card__date">27.06.2019</div>
     </div> 
   </div>
-</div>
-                <div class="card">
+</article>
+                <article class="card">
   <div class="card__foto"></div>
   <div class="card__title">СЕГОДНЯ ХОДИЛ В КЛУБ ЗАРЯ</div>
   <div class="card__content">
@@ -89,8 +90,8 @@
         <div class="card__date">27.06.2019</div>
     </div> 
   </div>
-</div>
-                <div class="card">
+</article>
+                <article class="card">
   <div class="card__foto"></div>
   <div class="card__title">СЕГОДНЯ ХОДИЛ В КЛУБ ЗАРЯ</div>
   <div class="card__content">
@@ -106,13 +107,13 @@
         <div class="card__date">27.06.2019</div>
     </div> 
   </div>
-</div>
+</article>
             </div>
             <a class="my-blog__button" href="./my-blog.html">ПОСМОТРЕТЬ ВСЕ НОВОСТИ</a>
         </div>
     </div>
-</div>
-    <div class="contacts">
+</main>
+  <section class="contacts">
     <div class="container">
         <div class="contacts__content">
             <h2 class="contacts__title">
@@ -122,37 +123,40 @@
                 <a class="contacts__link" 
                     href="https://vk.com/" 
                     target="blank">
-                    <img src="./img/Vk.png" alt="Ссылка на ВК">
+                    <div class="contacts__icon-vk"></div>
+                    <div class="contacts__name">ПЕРЕЙТИ В ВК</div>
                 </a>
                 <a class="contacts__link" 
                     href="https://www.instagram.com/?hl=ru" 
                     target="blank">
-                    <img src="./img/Instagram.png" alt="Ссылка на Instagram">
+                    <div class="contacts__icon-insta"></div>
+                    <div class="contacts__name">ПЕРЕЙТИ В ИНСТАГРАМ</div>
                 </a>
                 <a class="contacts__link" 
                     href="tel:+79376611570">
-                    <img src="./img/phone.png" alt="Номер телефона">
+                    <div class="contacts__icon-mobile"></div>
+                    <div class="contacts__name">ПОЗВОНИТЬ</div>
                 </a>
                 <a class="contacts__link" 
                     href="mailto:vlgrv80@gmail.com">
-                    <img src="./img/mail.png" alt="email">
+                    <div class="contacts__icon-email"></div>
+                    <div class="contacts__name">НАПИСАТЬ НА ПОЧТУ</div>
                 </a>
             </div>
         </div>
     </div>
-</div>
-  </main>
+</section>
   <footer class="footer">
     <div class="container">
         <div class="footer__content">
-            <div class="nav">
+            <nav class="nav">
     <a class="nav__link" 
     href="./index.html">Главная</a>
     <a class="nav__link"
     href="./my-blog.html">Мой блог</a>
     <a class="nav__link" 
-    href="#">Подробнее обо мне</a>
-</div>
+    href="./about-me.html">Подробнее обо мне</a>
+</nav>
             <p>&copy; 2019. VGryuger.ru</p>
         </div>
     </div>
