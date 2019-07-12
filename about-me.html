@@ -10,7 +10,7 @@
   <div class="container">
       <div class="header__content">
         <a class="header__logo" href="./index.html"></a>
-        <nav class="nav">
+        <nav class="nav nav_hidden">
     <a class="nav__link" 
     href="./index.html">Главная</a>
     <a class="nav__link"
@@ -18,6 +18,11 @@
     <a class="nav__link" 
     href="./about-me.html">Подробнее обо мне</a>
 </nav>
+        <div class="nav-button nav-button_hidden">
+  <div class="nav-button__line"></div>
+  <div class="nav-button__line"></div>
+  <div class="nav-button__line"></div>
+</div>
       </div>
   </div>
 </header>
@@ -68,7 +73,7 @@
       <div class="foto-block__cards-box">
         <article class="foto-card">
   <div class="foto-card__foto">
-    <img src="./img/foto-1.png" alt="фото в сквере">
+    <img src=./img/foto-1.png alt="фото в сквере">
   </div>
   <div class="foto-card__footer">
     <div class="foto-card__text">Фото в сквере нашего парка</div>
@@ -77,58 +82,60 @@
 </article>
         <article class="foto-card">
   <div class="foto-card__foto">
-    <img src="./img/foto-1.png" alt="фото в сквере">
+    <img src=./img/foto-2.png alt="фото в сквере">
   </div>
   <div class="foto-card__footer">
-    <div class="foto-card__text">Фото в сквере нашего парка</div>
-    <div class="foto-card__text">10.02.2018</div>
+    <div class="foto-card__text">Красивый закат и девушка</div>
+    <div class="foto-card__text">17.03.2017</div>
   </div>
 </article>
         <article class="foto-card">
   <div class="foto-card__foto">
-    <img src="./img/foto-1.png" alt="фото в сквере">
+    <img src=./img/foto-3.png alt="фото в сквере">
   </div>
   <div class="foto-card__footer">
-    <div class="foto-card__text">Фото в сквере нашего парка</div>
-    <div class="foto-card__text">10.02.2018</div>
+    <div class="foto-card__text">Красивые горы на фоне</div>
+    <div class="foto-card__text">21.01.2017</div>
   </div>
 </article>
         <article class="foto-card">
   <div class="foto-card__foto">
-    <img src="./img/foto-1.png" alt="фото в сквере">
+    <img src=./img/foto-4.png alt="фото в сквере">
   </div>
   <div class="foto-card__footer">
-    <div class="foto-card__text">Фото в сквере нашего парка</div>
-    <div class="foto-card__text">10.02.2018</div>
+    <div class="foto-card__text">Успела заснять капитана Marvel</div>
+    <div class="foto-card__text">13.06.2017</div>
   </div>
 </article>
         <article class="foto-card">
   <div class="foto-card__foto">
-    <img src="./img/foto-1.png" alt="фото в сквере">
+    <img src=./img/foto-5.png alt="фото в сквере">
   </div>
   <div class="foto-card__footer">
-    <div class="foto-card__text">Фото в сквере нашего парка</div>
-    <div class="foto-card__text">10.02.2018</div>
+    <div class="foto-card__text">Эмма Уотсон уже не торт</div>
+    <div class="foto-card__text">03.08.2016</div>
   </div>
 </article>
         <article class="foto-card">
   <div class="foto-card__foto">
-    <img src="./img/foto-1.png" alt="фото в сквере">
+    <img src=./img/foto-6.png alt="фото в сквере">
   </div>
   <div class="foto-card__footer">
-    <div class="foto-card__text">Фото в сквере нашего парка</div>
-    <div class="foto-card__text">10.02.2018</div>
+    <div class="foto-card__text">Жру и не толcтею, сжечь меня, шучу</div>
+    <div class="foto-card__text">30.01.2014</div>
   </div>
 </article>
       </div>
-      <a class="foto-block__button" href="#">ЗАГРУЗИТЬ ЕЩЕ</a>
+      <div class="foto-block__button">
+        <a href="#" class="button">ЗАГРУЗИТЬ ЕЩЕ</a>
+      </div>
     </div>
   </div>
 </section>
   <footer class="footer">
     <div class="container">
         <div class="footer__content">
-            <nav class="nav">
+            <nav class="nav @@hidden">
     <a class="nav__link" 
     href="./index.html">Главная</a>
     <a class="nav__link"
@@ -141,10 +148,12 @@
     </div>
 </footer>
 
-  <div class="phone-wave"></div>
-<a class="phone-icon" href="tel:+79376611570">
-    <img src="./img/phone.png" alt="Номер телефона">
-</a>
+  <div class="phone-icon">
+    <div class="phone-wave"></div>
+    <a class="phone-icon" href="tel:+79376611570">
+        <img src="./img/phone.png" alt="Номер телефона">
+    </a>
+</div>
 
 </body>
 <script src="script.js"></script>
