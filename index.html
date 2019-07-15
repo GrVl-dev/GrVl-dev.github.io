@@ -3,189 +3,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-  <title>Главная | VGryuger.ru</title>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <title>HEALTHY SPINE</title>
 </head>
 <body>
   <header class="header">
   <div class="container">
       <div class="header__content">
-        <a class="header__logo" href="./index.html"></a>
-        <nav class="nav nav_hidden">
+        <a class="header__logo" href="./index.html">
+          <svg viewBox="0 0 222 66">
+            <use xlink:href="./img/Sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="header__nav">
+          <nav class="nav">
     <a class="nav__link" 
-    href="./index.html">Главная</a>
+    href="#">Our Story</a>
     <a class="nav__link"
-    href="./my-blog.html">Мой блог</a>
+    href="#">Services</a>
     <a class="nav__link" 
-    href="./about-me.html">Подробнее обо мне</a>
+    href="#">FAQ</a>
+    <a class="nav__link" 
+    href="#">Contact</a>
 </nav>
-        <div class="nav-button nav-button_hidden">
-  <div class="nav-button__line"></div>
-  <div class="nav-button__line"></div>
-  <div class="nav-button__line"></div>
-</div>
-      </div>
+        </div>
+        <div class="header__contacts">
+          <div class="header__phone">(303) 457-2040</div>
+          <div class="header__button">
+            <a class="button" href="#"><div class="button button_yellow">Schedule Appointment</div></a>
+          </div>
+        </div>
+      </div>  
   </div>
 </header>
-  <section class="info-block">
-    <div class="container">
-        <article class="info-block__content">
-            <h1 class="info-block__title">
-              ОБО МНЕ
-            </h1>
-            <div class="info-block__article">
-                <div class="info-block__foto">
-                    <img src="./img/foto.png" alt="foto">
-                </div>
-                <div class="info-block__text-block">
-                    <div class="info-block__text">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing 
-                        elit. Praesent aliquam, justo convallis luctus rutrum, 
-                        erat nulla fermentum diam, at nonummy quam ante ac quam. 
-                        Maecenas urna purus, fermentum id, molestie in, commodo 
-                        porttitor, felis. Nam blandit quam ut lacus. Eum excepturi 
-                        accusantium amet odio corporis? Odio dignissimos repudiandae 
-                        vero sapiente voluptatum laboriosam fuga quidem quos, 
-                        nostrum voluptate, qui recusandae commodi. Aliquid tenetur 
-                        repellat velit assumenda sapiente aspernatur ratione, error 
-                        labore pariatur cum architecto debitis odio mollitia unde 
-                        officiis distinctio quia quam, voluptas quidem quasi dolorum, 
-                        repudiandae obcaecati. Veniam voluptatibus dolorum iste molestiae 
-                        repellat officiis quibusdam recusandae sequi cupiditate, sit 
-                        corrupti! Illo, esse quibusdam?
-                    </div>
-                    <div class="info-block__button">
-                        <a href="./about-me.html" class="button">ПОДРОБНЕЕ</a>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </div>
-</section>
-  <main class="my-blog">
-    <div class="container">
-        <div class="my-blog__content">
-            <h1 class="my-blog__title">МОЙ БЛОГ</h1>
-            <div class="my-blog__cards-box">
-                <article class="news-card @@hidden">
-  <div class="news-card__foto"></div>
-  <div class="news-card__title">СЕГОДНЯ ХОДИЛ В КЛУБ ЗАРЯ</div>
-  <div class="news-card__content">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Illum distinctio quasi culpa eveniet assumenda quia 
-      qui molestiae est ea odio quos voluptatibus perspiciatis, 
-      ipsam impedit tempore ducimus omnis deserunt adipisci 
-      inventore dicta consectetur...
-    </p>
-    <div class="news-card__footer">
-      <div class="news-card__button">
-        <a href="./news.html" class="button">ПЕРЕЙТИ К НОВОСТИ</a>
-      </div>
-      <div class="news-card__date">27.06.2019</div>
-    </div> 
-  </div>
-</article>
-                <article class="news-card news-card_hidden-2">
-  <div class="news-card__foto"></div>
-  <div class="news-card__title">СЕГОДНЯ ХОДИЛ В КЛУБ ЗАРЯ</div>
-  <div class="news-card__content">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Illum distinctio quasi culpa eveniet assumenda quia 
-      qui molestiae est ea odio quos voluptatibus perspiciatis, 
-      ipsam impedit tempore ducimus omnis deserunt adipisci 
-      inventore dicta consectetur...
-    </p>
-    <div class="news-card__footer">
-      <div class="news-card__button">
-        <a href="./news.html" class="button">ПЕРЕЙТИ К НОВОСТИ</a>
-      </div>
-      <div class="news-card__date">27.06.2019</div>
-    </div> 
-  </div>
-</article>
-                <article class="news-card news-card_hidden-3">
-  <div class="news-card__foto"></div>
-  <div class="news-card__title">СЕГОДНЯ ХОДИЛ В КЛУБ ЗАРЯ</div>
-  <div class="news-card__content">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Illum distinctio quasi culpa eveniet assumenda quia 
-      qui molestiae est ea odio quos voluptatibus perspiciatis, 
-      ipsam impedit tempore ducimus omnis deserunt adipisci 
-      inventore dicta consectetur...
-    </p>
-    <div class="news-card__footer">
-      <div class="news-card__button">
-        <a href="./news.html" class="button">ПЕРЕЙТИ К НОВОСТИ</a>
-      </div>
-      <div class="news-card__date">27.06.2019</div>
-    </div> 
-  </div>
-</article>
-            </div>
-            <div class="my-blog__button">
-                <a href="./my-blog.html" class="button">ПОСМОТРЕТЬ ВСЕ НОВОСТИ</a>
-            </div>
+  <main class="info-block">
+  <div class="container">
+    <div class="info-block__content">
+      <div class="info-block__article">
+        <div class="info-block__line section-line"></div>
+        <h1 class="info-block__title">
+          Healthy<br>Spine Family Chiropractic
+        </h1>
+        <p class="info-block__text">
+            Healthy Spine Family Chiropractic was created 
+            for the necessity of custom made chiropractic 
+            treatment for all ages. We understand that not 
+            all bodies are the same.
+        </p>
+        <div class="info-block__button">
+          <a class="button" href="#"><div class="button button_blue">Get In Touch Now</div></a>
         </div>
-    </div>
-</main>
-  <section class="contacts">
-    <div class="container">
-        <div class="contacts__content">
-            <h2 class="contacts__title">
-                КОНТАКТЫ
-            </h2>
-            <div class="contacts__nav">
-                <a class="contacts__link" 
-                    href="https://vk.com/" 
-                    target="blank">
-                    <div class="contacts__icon-vk"></div>
-                    <div class="contacts__name">ПЕРЕЙТИ В ВК</div>
-                </a>
-                <a class="contacts__link" 
-                    href="https://www.instagram.com/?hl=ru" 
-                    target="blank">
-                    <div class="contacts__icon-insta"></div>
-                    <div class="contacts__name">ПЕРЕЙТИ В ИНСТАГРАМ</div>
-                </a>
-                <a class="contacts__link" 
-                    href="tel:+79376611570">
-                    <div class="contacts__icon-mobile"></div>
-                    <div class="contacts__name">ПОЗВОНИТЬ</div>
-                </a>
-                <a class="contacts__link" 
-                    href="mailto:vlgrv80@gmail.com">
-                    <div class="contacts__icon-email"></div>
-                    <div class="contacts__name">НАПИСАТЬ НА ПОЧТУ</div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-  <footer class="footer">
-    <div class="container">
-        <div class="footer__content">
-            <nav class="nav @@hidden">
-    <a class="nav__link" 
-    href="./index.html">Главная</a>
-    <a class="nav__link"
-    href="./my-blog.html">Мой блог</a>
-    <a class="nav__link" 
-    href="./about-me.html">Подробнее обо мне</a>
-</nav>
-            <p>&copy; 2019. VGryuger.ru</p>
-        </div>
-    </div>
-</footer>
-
-  <div class="phone-icon">
-    <div class="phone-wave"></div>
-    <a class="phone-icon" href="tel:+79376611570">
-        <img src="./img/phone.png" alt="Номер телефона">
-    </a>
+        <div class="info-block__social-icon">
+          <div class="social-icon">
+  <a href="https://www.pinterest.com/" target="blank">
+    <svg class="social-icon__logo" viewBox="0 0 30 30">
+      <use xlink:href="./img/Sprite.svg#pinterest"></use>
+    </svg>
+  </a>
+  <a href="https://www.instagram.com/" target="blank">
+    <svg class="social-icon__logo" viewBox="0 0 30 30">
+      <use xlink:href="./img/Sprite.svg#instagram"></use>
+    </svg>
+  </a>
+  <a href="https://www.twitter.com/" target="blank">
+    <svg class="social-icon__logo" viewBox="0 0 30 30">
+      <use xlink:href="./img/Sprite.svg#twitter"></use>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/" target="blank">
+    <svg class="social-icon__logo" viewBox="0 0 30 30">
+      <use xlink:href="./img/Sprite.svg#facebook"></use>
+    </svg>
+  </a>
 </div>
+        </div>
+      </div>
+      <div class="info-block__img">
+        <div class="info-block__img-spine"></div>
+        <div class="info-block__img-shadow"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</main>
 
 </body>
 <script src="script.js"></script>
