@@ -79,8 +79,13 @@
         </div>
       </div>
       <div class="info-block__img">
-        <div class="info-block__img-spine"></div>
+        <img class="info-block__img-bg" src="./img/spine-bg.svg">
+        <img class="info-block__img-spine" src="./img/spine.png">
+        <div class="info-block__img-shadow"></div>
       </div>
+<!--       <div class="info-block__img">
+        <div class="info-block__img-spine"></div>
+      </div> -->
       </div>
     </div>
   </div>
@@ -92,9 +97,9 @@
         <img class="treatment-block__img" src="./img/treatment-img.png" alt="Women">
       </div>
         <article class="treatment-block__article">
-          <div class="treatment-block__title">
+          <h2 class="treatment-block__title">
             Comprehensive Pain Treatment
-          </div>
+          </h2>
           <div class="treatment-block__text">
             Healthy Spine Family Chiropractic was created 
             for the necessity of custom made chiropractic 
@@ -123,13 +128,13 @@
   <div class="services-block__bg-cloud-blue"></div>
   <div class="container">
     <div class="services-block__content">
-      <div class="services-block__title">Services</div>
+      <h2 class="services-block__title">Services</h2>
       <div class="services-block__card-box">
         <div class="services-card services-card__1">
   <div class="services-card__img">
       <img class="services-card__img" src="./img/Chiropractic.png" alt="services pic">
   </div>
-  <div class="services-card__title">Chiropractic</div>
+  <h3 class="services-card__title">Chiropractic</h3>
   <div class="services-card__text">Chiropractic care is a unique science that focuses on restoring and maintaining health, while most other healing arts are designed to treat disease.</div>
   <div class="services-card__links">
     <div class="services-card__link link-@@visibility__1"><a class="services-card__link" href="#">Chiropractic Adjustment</a></div>
@@ -142,7 +147,7 @@
   <div class="services-card__img">
       <img class="services-card__img" src="./img/Acupuncture.png" alt="services pic">
   </div>
-  <div class="services-card__title">Acupuncture</div>
+  <h3 class="services-card__title">Acupuncture</h3>
   <div class="services-card__text">Healthy Spine Family Chiropractic, serves the Thornton and surrounding communities and it provides a natural, conservative approach to your health care.</div>
   <div class="services-card__links">
     <div class="services-card__link link-@@visibility__1"><a class="services-card__link" href="#">Cupping</a></div>
@@ -155,7 +160,7 @@
   <div class="services-card__img">
       <img class="services-card__img" src="./img/Massage.png" alt="services pic">
   </div>
-  <div class="services-card__title">Massage</div>
+  <h3 class="services-card__title">Massage</h3>
   <div class="services-card__text">Healthy Spine Family Chiropractic, serves the Thornton and surrounding communities and it provides a natural, conservative approach to your health care.</div>
   <div class="services-card__links">
     <div class="services-card__link link-@@visibility__1"><a class="services-card__link" href="#">Deep Tissue</a></div>
@@ -234,6 +239,32 @@
     </div>
   </div>
 </section>
+  <section class="contact-block padding-block">
+    <div class="container">
+        <div class="contact-block__content">
+            <div class="contact-block__icon">
+                <svg viewBox="0 0 201 105" fill="none">
+                    <use xlink:href="./img/Sprite.svg#mail"></use>
+                </svg>
+            </div>
+            <article class="contact-block__article">
+                <h2 class="contact-block__title">
+                    Contact Us Today
+                </h2>
+                <div class="contact-block__text">
+                    We are happy to assist you with any questions you may 
+                    have regarding your chiropractic needs or insurance 
+                    questions. You can make an appointment online or by 
+                    giving us a call at
+                </div>
+                <div class="contact-block__phone">(303) 457-2040</div>
+                <div class="contact-block__button">
+                    <a class="button" href="#"><div class="button button_blue">Make an Appointment</div></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
   <footer class="footer padding-block">
   <div class="container">
     <div class="footer__content">
@@ -251,7 +282,8 @@
 </nav>
         </div>
         <div class="footer__contact">
-          <div class="social-icon">
+          <div class="footer__icon">
+            <div class="social-icon">
   <a href="https://www.pinterest.com/" target="blank">
     <svg class="social-icon__logo" viewBox="0 0 30 30">
       <use xlink:href="./img/Sprite.svg#pinterest"></use>
@@ -273,6 +305,8 @@
     </svg>
   </a>
 </div>
+          </div>
+
           <div class="footer__button">
             <a class="button" href="#"><div class="button button_yellow">Contact Us</div></a>
           </div>
