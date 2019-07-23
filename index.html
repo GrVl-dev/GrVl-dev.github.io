@@ -15,8 +15,9 @@
             <use xlink:href="./img/Sprite.svg#logo"></use>
           </svg>
         </a>
-        <div class="header__nav">
-          <nav class="nav">
+        <div class="header__box">
+          <div class="header__nav">
+            <nav class="nav">
     <a class="nav__link" 
     href="#">Our Story</a>
     <a class="nav__link"
@@ -26,14 +27,15 @@
     <a class="nav__link" 
     href="#">Contact</a>
 </nav>
-        </div>
-        <div class="header__contacts">
-          <div class="header__phone">(303) 457-2040</div>
-          <div class="header__button">
-            <a class="button" href="#"><div class="button button_yellow">Schedule Appointment</div></a>
           </div>
+          <div class="header__contacts">
+            <div class="header__phone">(303) 457-2040</div>
+            <div class="header__button">
+              <a class="button" href="#"><div class="button button_yellow">Schedule Appointment</div></a>
+            </div>
+          </div>
+          <div class="header__nav-button"></div>
         </div>
-        <div class="header__nav-button"></div>
       </div>  
   </div>
 </header>
@@ -82,10 +84,6 @@
         <img class="info-block__img-bg" src="./img/spine-bg.svg">
         <img class="info-block__img-spine" src="./img/spine.png">
         <div class="info-block__img-shadow"></div>
-      </div>
-<!--       <div class="info-block__img">
-        <div class="info-block__img-spine"></div>
-      </div> -->
       </div>
     </div>
   </div>
@@ -223,19 +221,26 @@
   </div>
 </section>
   <section class="specialist-block padding-block">
+    <div class="specialist-block__bg-cloud-white"></div>
   <div class="container">
     <div class="specialist-block__content">
-      <div class="specialist-block__bg">
-        <img class="specialist-block__img" src="./img/specialist.png" alt="spicialist">
-      </div>
-        <article class="specialist-block__article">
-          <h2 class="specialist-block__title">
+          <img class="specialist-block__img" src="./img/specialist.png" alt="spicialist">
+      <article class="specialist-block__article">
+        <h2 class="specialist-block__title">
             Dr. Osvaldo «Ozzie» Gratacos
-          </h2>
-          <div class="specialist-block__text">
-            Dr. Osvaldo “Ozzie” Gratacos is a licensed chiropractor serving the Thornton and surrounding communities. Dr. Gratacos graduated from Palmer College of Chiropractic in Florida. After graduating, Dr. Gratacos went back to his home in Puerto Rico to open a practice for 4 years before practicing in Lakewood, Colorado. He is bilingual (spanish/english). Ozzie is certified in extremity adjustments, treatment in golf related injuries, and Cox technique for herniated disc.  you.
-          </div>
-        </article>
+         </h2>
+        <div class="specialist-block__text">
+          Dr. Osvaldo “Ozzie” Gratacos is a licensed 
+          chiropractor serving the Thornton and surrounding 
+          communities. Dr. Gratacos graduated from Palmer College 
+          of Chiropractic in Florida. After graduating, Dr. 
+          Gratacos went back to his home in Puerto Rico to open 
+          a practice for 4 years before practicing in Lakewood, 
+          Colorado. He is bilingual (spanish/english). Ozzie is 
+          certified in extremity adjustments, treatment in golf 
+          related injuries, and Cox technique for herniated disc.
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -262,6 +267,9 @@
                     <a class="button" href="#"><div class="button button_blue">Make an Appointment</div></a>
                 </div>
             </article>
+        </div>
+        <div class="contact-block__map">
+            <img class="contact-block__map-img" src="./img/map.png" alt="map">
         </div>
     </div>
 </section>
@@ -323,26 +331,23 @@
           <p>Saturday — 10:00 AM - 1:00 PM</p>
         </div>
         <div class="footer__copyright">
-          <p class="footer__rating">Company rating:
-            <span>
-              <svg class="footer__star" width="22" height="22" viewBox="0 0 22 22">
-                <use xlink:href="./img/Sprite.svg#star"></use>
-              </svg>
-              <svg class="footer__star" width="22" height="22" viewBox="0 0 22 22">
-                  <use xlink:href="./img/Sprite.svg#star"></use>
-              </svg>
-              <svg class="footer__star" width="22" height="22" viewBox="0 0 22 22">
-                  <use xlink:href="./img/Sprite.svg#star"></use>
-              </svg>
-              <svg class="footer__star" width="22" height="22" viewBox="0 0 22 22">
-                  <use xlink:href="./img/Sprite.svg#star"></use>
-              </svg>
-              <svg class="footer__star" width="22" height="22" viewBox="0 0 22 22">
-                  <use xlink:href="./img/Sprite.svg#star"></use>
-              </svg>
-              <svg class="footer__star" width="22" height="22" viewBox="0 0 22 22">
-                  <use xlink:href="./img/Sprite.svg#star"></use>
-              </svg>
+            <p class="footer__rating">Company rating:
+            <span class="footer__stars">
+              <svg class="stars-icon" viewBox="0 0 22 22">
+    <use xlink:href="./img/Sprite.svg#star"></use>
+  </svg>
+  <svg class="stars-icon" viewBox="0 0 22 22">
+      <use xlink:href="./img/Sprite.svg#star"></use>
+  </svg>
+  <svg class="stars-icon" viewBox="0 0 22 22">
+      <use xlink:href="./img/Sprite.svg#star"></use>
+  </svg>
+  <svg class="stars-icon" viewBox="0 0 22 22">
+      <use xlink:href="./img/Sprite.svg#star"></use>
+  </svg>
+  <svg class="stars-icon" viewBox="0 0 22 22">
+      <use xlink:href="./img/Sprite.svg#star"></use>
+</svg>
             </span>
           </p>
           <p>© Copyright — Healthy Spine Family Chiropractic 2019</p>
