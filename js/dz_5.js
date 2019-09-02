@@ -1,5 +1,8 @@
-/* // первое задание------------------------------------------
-var blocks = document.getElementsByClassName('dz-3-5_js')[0];
+var here = document.querySelectorAll('.header__links-item_js');
+here[4].style.color = '#3590CC';
+
+// первое задание------------------------------------------
+var blocks = document.getElementsByClassName('dz-5_js')[0];
 blocks.innerHTML += '<div class = "block-3">Третий блок</div>';
 
 // Второе задание-------------------------------------------
@@ -51,9 +54,9 @@ setTimeout(function() {
 }, 6000);
 
 // четвертое задание-----------------
-var elements = document.querySelector('.dz-3-5_js').children;
+var elements = document.querySelector('.dz-5_js').children;
 setTimeout(function() {
     elements[0].classList.add('circle-0');
     elements[1].classList.add('circle-1');
     elements[2].classList.add('circle-2');
-}, 12000); */
+}, 12000);

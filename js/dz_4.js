@@ -1,3 +1,134 @@
+var here = document.querySelectorAll('.header__links-item_js');
+here[3].style.color = '#3590CC';
+
+setTimeout(function() {
+//второе задание из прошлой домашки-------------------------
+/* var fruits = [],
+  task = "Введите название 5-ти фруктов, ",
+  numbers = ["первый:", "второй:", "третий:", "четвертый:", "пятый:"];
+
+function inputData() {
+  for (var i = 0; i < 5; i++) {
+    fruits[i] = prompt(task + numbers[i]);
+    if (!fruits[i]) {
+      alert("Что-то пошло не так, попробуйте еще!!!");
+      i--;
+    }
+  }
+}
+function outputData(input) {
+  input();
+  console.log("Обратный порядок введенных фруктов:");
+  for (var i = 4; i > -1; i--) {
+    console.log((i + 1) + " фрукт" + " - " + fruits[i]);
+  }
+}
+
+outputData(inputData);
+ */
+
+ //третье задание из прошлой домашки-------------------------
+
+/* var shop = {
+  init: init,
+  output: output
+}
+
+function init() {
+  init.store = prompt("Введите название магазина:"); // при имени init.name возвращает имя функции...
+  init.amount = prompt("Введите количество продуктов в магазине:");
+  while (+init.amount !== +init.amount || +init.amount <= 0) {
+    init.amount = prompt("Введите количество продуктов в магазине еще раз, прошлый ввод ошибочен:");
+  }
+  init.products = [];
+  for (var i = 0; i < init.amount; i++) {
+    init.products[i] = {};
+    init.products[i].title = prompt("Введите наименование "  + (i + 1) + "-го продукта:");
+    init.products[i].price = prompt("Введите цену продукта " + init.products[i].title);
+    while (+init.products[i].price !== +init.products[i].price || +init.products[i].price <= 0) {
+      init.products[i].price = prompt("Вы указали цену в необычном формате, попробуйте еще раз!");
+    }
+  }
+  output();
+}
+
+function output() {
+  console.log("Название магазина: " + init.store);
+  console.log("Количество продуктов: " + init.amount);
+  console.log("Продукты в магазине:");
+  
+  for (var i = 0; i < init.amount; i++) {
+    console.log("Продукт - " + init.products[i].title + ", цена - " + init.products[i].price + "\u20BD");
+  }
+}
+
+shop.init();
+console.log(shop); */
+
+// Второе задание -----------------------------
+
+// var  orthography = {
+//   letterUp: letterUp,
+//   init: init,
+// }
+// function letterUp() {
+//   var target = ".",
+//       textUp = "",
+//       foundPos,
+//       pos = 0;
+//   while (true) {
+//     foundPos = orthography.text.indexOf(target, pos);
+//     if (foundPos == -1) break;
+//     for (var i = pos; i <= foundPos; i++) {
+//       if ( i == pos || i == (pos + 1) && i != 1) {
+//         textUp += orthography.text.charAt(i).toUpperCase();
+//       } else {
+//         textUp += orthography.text.charAt(i);
+//       }
+//     }
+//     pos = foundPos + 1;
+//   }
+//   orthography.text = textUp;
+// }
+
+// function init() {
+//   orthography.text = prompt("Введите текст");
+//   while (!orthography.text) {
+//     orthography.text = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
+//   }
+//   orthography.letterUp();
+// }
+// init();
+// alert(orthography.text);
+
+// Третье задание -----------------------------
+
+/* var slice = {
+  getSlice: getSlice,
+  init: init
+}
+
+function getSlice() {
+  var foundPos = slice.inputTextLower.indexOf("кукушка", 0);
+  slice.outputText = slice.inputText.slice(0, foundPos);
+}
+
+function init() {
+  slice.inputText = prompt("Введите текст, в коротом обязательно присутствует слово Кукушка");
+  slice.inputTextLower = slice.inputText.toLowerCase();
+  while (!slice.inputText || slice.inputTextLower.indexOf("кукушка", 0) == -1) {
+    slice.inputText = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
+    slice.inputTextLower = slice.inputText.toLowerCase();
+  }
+  slice.getSlice();
+}
+init();
+console.log(slice.inputText);
+console.log(slice.inputTextLower);
+console.log(slice.outputText); */
+
+//  четвертое задание ----------------------------------------
+
 /* var shop = {
     init: init,
     inputProducts: inputProducts,
@@ -179,3 +310,5 @@ function searchName() {
   if (confirm(msg + "Выполнить поиск заново?")) shop.searchName();
 }
 shop.init(); */
+
+}, 4000);
