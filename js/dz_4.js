@@ -3,7 +3,7 @@ here[3].style.color = '#3590CC';
 
 setTimeout(function() {
 //второе задание из прошлой домашки-------------------------
-/* var fruits = [],
+var fruits = [],
   task = "Введите название 5-ти фруктов, ",
   numbers = ["первый:", "второй:", "третий:", "четвертый:", "пятый:"];
 
@@ -25,85 +25,85 @@ function outputData(input) {
 }
 
 outputData(inputData);
- */
+
 
  //третье задание из прошлой домашки-------------------------
 
-/* var shop = {
-  init: init,
-  output: output
+var shop1 = {
+  init1: init1,
+  output1: output1
 }
 
-function init() {
-  init.store = prompt("Введите название магазина:"); // при имени init.name возвращает имя функции...
-  init.amount = prompt("Введите количество продуктов в магазине:");
-  while (+init.amount !== +init.amount || +init.amount <= 0) {
-    init.amount = prompt("Введите количество продуктов в магазине еще раз, прошлый ввод ошибочен:");
+function init1() {
+  init1.store = prompt("Введите название магазина:"); // при имени init.name возвращает имя функции...
+  init1.amount = prompt("Введите количество продуктов в магазине:");
+  while (+init1.amount !== +init1.amount || +init1.amount <= 0) {
+    init1.amount = prompt("Введите количество продуктов в магазине еще раз, прошлый ввод ошибочен:");
   }
-  init.products = [];
-  for (var i = 0; i < init.amount; i++) {
-    init.products[i] = {};
-    init.products[i].title = prompt("Введите наименование "  + (i + 1) + "-го продукта:");
-    init.products[i].price = prompt("Введите цену продукта " + init.products[i].title);
-    while (+init.products[i].price !== +init.products[i].price || +init.products[i].price <= 0) {
-      init.products[i].price = prompt("Вы указали цену в необычном формате, попробуйте еще раз!");
+  init1.products = [];
+  for (var i = 0; i < init1.amount; i++) {
+    init1.products[i] = {};
+    init1.products[i].title = prompt("Введите наименование "  + (i + 1) + "-го продукта:");
+    init1.products[i].price = prompt("Введите цену продукта " + init1.products[i].title);
+    while (+init1.products[i].price !== +init1.products[i].price || +init1.products[i].price <= 0) {
+      init1.products[i].price = prompt("Вы указали цену в необычном формате, попробуйте еще раз!");
     }
   }
-  output();
+  output1();
 }
 
-function output() {
-  console.log("Название магазина: " + init.store);
-  console.log("Количество продуктов: " + init.amount);
+function output1() {
+  console.log("Название магазина: " + init1.store);
+  console.log("Количество продуктов: " + init1.amount);
   console.log("Продукты в магазине:");
   
-  for (var i = 0; i < init.amount; i++) {
-    console.log("Продукт - " + init.products[i].title + ", цена - " + init.products[i].price + "\u20BD");
+  for (var i = 0; i < init1.amount; i++) {
+    console.log("Продукт - " + init1.products[i].title + ", цена - " + init1.products[i].price + "\u20BD");
   }
 }
 
-shop.init();
-console.log(shop); */
+shop1.init1();
+console.log(shop1);
 
 // Второе задание -----------------------------
 
-// var  orthography = {
-//   letterUp: letterUp,
-//   init: init,
-// }
-// function letterUp() {
-//   var target = ".",
-//       textUp = "",
-//       foundPos,
-//       pos = 0;
-//   while (true) {
-//     foundPos = orthography.text.indexOf(target, pos);
-//     if (foundPos == -1) break;
-//     for (var i = pos; i <= foundPos; i++) {
-//       if ( i == pos || i == (pos + 1) && i != 1) {
-//         textUp += orthography.text.charAt(i).toUpperCase();
-//       } else {
-//         textUp += orthography.text.charAt(i);
-//       }
-//     }
-//     pos = foundPos + 1;
-//   }
-//   orthography.text = textUp;
-// }
+var  orthography = {
+  letterUp: letterUp,
+  init: init,
+}
+function letterUp() {
+  var target = ".",
+      textUp = "",
+      foundPos,
+      pos = 0;
+  while (true) {
+    foundPos = orthography.text.indexOf(target, pos);
+    if (foundPos == -1) break;
+    for (var i = pos; i <= foundPos; i++) {
+      if ( i == pos || i == (pos + 1) && i != 1) {
+        textUp += orthography.text.charAt(i).toUpperCase();
+      } else {
+        textUp += orthography.text.charAt(i);
+      }
+    }
+    pos = foundPos + 1;
+  }
+  orthography.text = textUp;
+}
 
-// function init() {
-//   orthography.text = prompt("Введите текст");
-//   while (!orthography.text) {
-//     orthography.text = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
-//   }
-//   orthography.letterUp();
-// }
-// init();
-// alert(orthography.text);
+function init() {
+  orthography.text = prompt("Введите текст");
+  while (!orthography.text) {
+    orthography.text = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
+  }
+  orthography.letterUp();
+}
+init();
+alert(orthography.text);
 
 // Третье задание -----------------------------
 
-/* var slice = {
+var slice = {
   getSlice: getSlice,
   init: init
 }
@@ -125,11 +125,13 @@ function init() {
 init();
 console.log(slice.inputText);
 console.log(slice.inputTextLower);
-console.log(slice.outputText); */
+console.log(slice.outputText);
 
 //  четвертое задание ----------------------------------------
 
-/* var shop = {
+ var shop = {
+    name,
+    products,
     init: init,
     inputProducts: inputProducts,
     controlPanel: controlPanel,
@@ -309,6 +311,6 @@ function searchName() {
   }
   if (confirm(msg + "Выполнить поиск заново?")) shop.searchName();
 }
-shop.init(); */
+shop.init();
 
 }, 4000);

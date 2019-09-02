@@ -1,6 +1,10 @@
-/* var inputBox = document.createElement('div'),
+var here = document.querySelectorAll('.header__links-item_js');
+here[6].style.color = '#3590CC';
+
+
+var inputBox = document.createElement('div'),
     inputTypeBox = document.createElement('div'),
-    inputNumBox = document.('div'),
+    inputNumBox = document.createElement('div'),
     button = document.querySelector('.list__button_js'),
     itemBox = document.querySelector('.list__item-box_js'),
     inputSelectBox = document.querySelector('.list__input-select-box_js'),
@@ -104,4 +108,4 @@ tempC.oninput = function () {
     tempF.innerHTML = (32 + 1.8 * Math.abs(+tempC.value)).toFixed(2);
   }
 }
- */
+

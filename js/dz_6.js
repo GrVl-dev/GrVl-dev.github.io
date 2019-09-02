@@ -1,13 +1,18 @@
-/* // Первое задание----------------
-var ctrlBlock = document.querySelector('.ctrlBlock'),
-    nextTask = document.querySelector('.nextTask'),
-    newBlock = document.querySelector('.newBlock'),
-    numTask = document.querySelector('.numTask'),
-    cntxMenu = document.querySelector('.cntxMenu'),
-    square = document.querySelector('.square'),
-    triangle = document.querySelector('.triangle'),
-    cntxMenuItem = document.querySelector('.cntxMenu').children,
-    cont = document.querySelector('.content'),
+var here = document.querySelectorAll('.header__links-item_js');
+here[5].style.color = '#3590CC';
+
+
+
+// Первое задание----------------
+var ctrlBlock = document.querySelector('.dz-6__ctrlBlock_js'),
+    nextTask = document.querySelector('.dz-6__nextTask_js'),
+    newBlock = document.querySelector('.dz-6__newBlock_js'),
+    numTask = document.querySelector('.dz-6__numTask_js'),
+    cntxMenu = document.querySelector('.dz-6__cntxMenu_js'),
+    square = document.querySelector('.dz-6__square_js'),
+    triangle = document.querySelector('.dz-6__triangle_js'),
+    cntxMenuItem = document.querySelector('.dz-6__cntxMenu_js').children,
+    cont = document.querySelector('.dz-6__content_js'),
     textTask01 = 'Кликни левой кнопкой мыши, чтобы изменить стиль',
     textTask02 = 'Кликни левой кнопкой мыши, чтобы добавить новый блок',
     textNewBlock = 'Вы проявили невероятные способности в управлении мышкой',
@@ -23,7 +28,7 @@ var ctrlBlock = document.querySelector('.ctrlBlock'),
     event,
     count = 0;
 function setVisible(block, text) {
-    block.classList.add('setVisible');
+    block.classList.add('dz-6__setVisible');
     block.innerHTML = text;
     ctrlBlock.style = cleanStyle;
 }
@@ -47,9 +52,9 @@ function changeTask() {
         numTask.innerHTML = '2';
         ctrlBlock.addEventListener('click', addBlock);
     } else if (countTask == 3) {
-        ctrlBlock.classList.remove('setVisible');
+        ctrlBlock.classList.remove('dz-6__setVisible');
         ctrlBlock.innerHTML = '';
-        newBlock.classList.remove('setVisible');
+        newBlock.classList.remove('dz-6__setVisible');
         newBlock.innerHTML = '';
         numTask.innerHTML = '3';
         nextTask.innerHTML = 'Перейти в начало этого увлекательного квеста';
@@ -73,7 +78,7 @@ function changeTask() {
 
 function addCntxMenu() {
     event.preventDefault();
-    cntxMenu.classList.add('cntxStyle');
+    cntxMenu.classList.add('dz-6__cntxStyle');
     cntxMenu.style.top = event.clientY + 'px';
     cntxMenu.style.left = event.clientX + 'px';
     cntxMenuItem[0].innerHTML = 'Добавить/удалить квадрат';
@@ -82,7 +87,7 @@ function addCntxMenu() {
     cntxMenuItem[3].innerHTML = 'LeftRightAnimate на треугольник(вкл/выкл)';
     cntxMenuItem[4].innerHTML = 'Вернуть все в исходное состояние';
     for (i = 0; i < 5; i++){
-        cntxMenuItem[i].classList.add('cntxItem');
+        cntxMenuItem[i].classList.add('dz-6__cntxItem');
     }
     
     cntxMenuItem[0].addEventListener('click', squareAdd);
@@ -94,29 +99,29 @@ function addCntxMenu() {
 
 function delCntxMenu() {
     for (var i = 0; i < 5; i++){
-        cntxMenuItem[i].classList.remove('cntxItem');
+        cntxMenuItem[i].classList.remove('dz-6__cntxItem');
         cntxMenuItem[i].innerHTML = '';
     }
-    cntxMenu.classList.remove('cntxStyle');
+    cntxMenu.classList.remove('dz-6__cntxStyle');
 }
 
 function squareAdd() {
-    if(square.classList.contains("squareVsbl")) {
-        square.classList.remove('squareVsbl');
-        square.classList.remove('bounce');
+    if(square.classList.contains("dz-6__squareVsbl")) {
+        square.classList.remove('dz-6__squareVsbl');
+        square.classList.remove('dz-6__bounce');
     } else {
-        square.classList.add('squareVsbl');
+        square.classList.add('dz-6__squareVsbl');
     }
     square.style.top = (event.clientY - 50) + 'px';
     square.style.left = (event.clientX - 50) + 'px';
 }
 
 function triangleAdd() {
-    if(triangle.classList.contains("triangleVsbl")) {
-        triangle.classList.remove('triangleVsbl');
+    if(triangle.classList.contains("dz-6__triangleVsbl")) {
+        triangle.classList.remove('dz-6__triangleVsbl');
         triangle.innerHTML = '';
     } else {
-        triangle.classList.add('triangleVsbl');
+        triangle.classList.add('dz-6__triangleVsbl');
         triangle.innerHTML = "&#9650;";
     }
     triangle.style.top = (event.clientY - 50) + 'px';
@@ -124,35 +129,35 @@ function triangleAdd() {
 }
 
 function clearAll() {
-    triangle.classList.remove('triangleVsbl');
+    triangle.classList.remove('dz-6__triangleVsbl');
     triangle.innerHTML = '';
     triangle.style = '';
-    square.classList.remove('squareVsbl');
-    square.classList.remove('bounce');
+    square.classList.remove('dz-6__squareVsbl');
+    square.classList.remove('dz-6__bounce');
     document.body.onmousemove = function (event) {
         triangle.style.left = '';
     }
 }
 
 function bounce() {
-    if(square.classList.contains("squareVsbl")) {
-        if(square.classList.contains("bounce")) {
-            square.classList.remove('bounce');
+    if(square.classList.contains("dz-6__squareVsbl")) {
+        if(square.classList.contains("dz-6__bounce")) {
+            square.classList.remove('dz-6__bounce');
         } else {
-            square.classList.add('bounce');
+            square.classList.add('dz-6__bounce');
         }
     }
 }
 function lftRghtMove() {
-    if(triangle.classList.contains("triangleVsbl")) {
-        if(triangle.classList.contains("lftRght")) {
-            triangle.classList.remove('lftRght');
+    if(triangle.classList.contains("dz-6__triangleVsbl")) {
+        if(triangle.classList.contains("dz-6__lftRght")) {
+            triangle.classList.remove('dz-6__lftRght');
             triangle.style.transition = '';
             document.body.onmousemove = function (event) {
                 triangle.style.left = '';
             }
         } else {
-            triangle.classList.add('lftRght');
+            triangle.classList.add('dz-6__lftRght');
             triangle.style.transition = '2s';
             document.body.onmousemove = function (event) {
                 triangle.style.left = event.clientX + 'px';
@@ -163,4 +168,4 @@ function lftRghtMove() {
 
 setVisible(ctrlBlock, textTask01);
 ctrlBlock.addEventListener('click', changeStyle);
-nextTask.addEventListener('click', changeTask); */
+nextTask.addEventListener('click', changeTask);
