@@ -1,135 +1,147 @@
 var here = document.querySelectorAll('.header__links-item_js');
 here[3].style.color = '#3590CC';
 
-setTimeout(function() {
-//второе задание из прошлой домашки-------------------------
-var fruits = [],
-  task = "Введите название 5-ти фруктов, ",
-  numbers = ["первый:", "второй:", "третий:", "четвертый:", "пятый:"];
+var control = document.querySelectorAll('.dz-4__button_js');
 
-function inputData() {
-  for (var i = 0; i < 5; i++) {
-    fruits[i] = prompt(task + numbers[i]);
-    if (!fruits[i]) {
-      alert("Что-то пошло не так, попробуйте еще!!!");
-      i--;
-    }
-  }
-}
-function outputData(input) {
-  input();
-  console.log("Обратный порядок введенных фруктов:");
-  for (var i = 4; i > -1; i--) {
-    console.log((i + 1) + " фрукт" + " - " + fruits[i]);
-  }
-}
+control[0].onclick = task1;
+control[1].onclick = task2;
+control[2].onclick = task3;
+control[3].onclick = task4;
 
-outputData(inputData);
+function task1() {
+  //второе задание из прошлой домашки-------------------------
+  var fruits = [],
+    task = "Введите название 5-ти фруктов, ",
+    numbers = ["первый:", "второй:", "третий:", "четвертый:", "пятый:"];
 
-
- //третье задание из прошлой домашки-------------------------
-
-var shop1 = {
-  init1: init1,
-  output1: output1
-}
-
-function init1() {
-  init1.store = prompt("Введите название магазина:"); // при имени init.name возвращает имя функции...
-  init1.amount = prompt("Введите количество продуктов в магазине:");
-  while (+init1.amount !== +init1.amount || +init1.amount <= 0) {
-    init1.amount = prompt("Введите количество продуктов в магазине еще раз, прошлый ввод ошибочен:");
-  }
-  init1.products = [];
-  for (var i = 0; i < init1.amount; i++) {
-    init1.products[i] = {};
-    init1.products[i].title = prompt("Введите наименование "  + (i + 1) + "-го продукта:");
-    init1.products[i].price = prompt("Введите цену продукта " + init1.products[i].title);
-    while (+init1.products[i].price !== +init1.products[i].price || +init1.products[i].price <= 0) {
-      init1.products[i].price = prompt("Вы указали цену в необычном формате, попробуйте еще раз!");
-    }
-  }
-  output1();
-}
-
-function output1() {
-  console.log("Название магазина: " + init1.store);
-  console.log("Количество продуктов: " + init1.amount);
-  console.log("Продукты в магазине:");
-  
-  for (var i = 0; i < init1.amount; i++) {
-    console.log("Продукт - " + init1.products[i].title + ", цена - " + init1.products[i].price + "\u20BD");
-  }
-}
-
-shop1.init1();
-console.log(shop1);
-
-// Второе задание -----------------------------
-
-var  orthography = {
-  letterUp: letterUp,
-  init: init,
-}
-function letterUp() {
-  var target = ".",
-      textUp = "",
-      foundPos,
-      pos = 0;
-  while (true) {
-    foundPos = orthography.text.indexOf(target, pos);
-    if (foundPos == -1) break;
-    for (var i = pos; i <= foundPos; i++) {
-      if ( i == pos || i == (pos + 1) && i != 1) {
-        textUp += orthography.text.charAt(i).toUpperCase();
-      } else {
-        textUp += orthography.text.charAt(i);
+  function inputData() {
+    for (var i = 0; i < 5; i++) {
+      fruits[i] = prompt(task + numbers[i]);
+      if (!fruits[i]) {
+        alert("Что-то пошло не так, попробуйте еще!!!");
+        i--;
       }
     }
-    pos = foundPos + 1;
   }
-  orthography.text = textUp;
-}
-
-function init() {
-  orthography.text = prompt("Введите текст");
-  while (!orthography.text) {
-    orthography.text = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
+  function outputData(input) {
+    input();
+    console.log("Обратный порядок введенных фруктов:");
+    for (var i = 4; i > -1; i--) {
+      console.log((i + 1) + " фрукт" + " - " + fruits[i]);
+    }
   }
-  orthography.letterUp();
+
+  outputData(inputData);
+
+
+  //третье задание из прошлой домашки-------------------------
+
+  var shop1 = {
+    init1: init1,
+    output1: output1
+  }
+
+  function init1() {
+    init1.store = prompt("Введите название магазина:"); // при имени init.name возвращает имя функции...
+    init1.amount = prompt("Введите количество продуктов в магазине:");
+    while (+init1.amount !== +init1.amount || +init1.amount <= 0) {
+      init1.amount = prompt("Введите количество продуктов в магазине еще раз, прошлый ввод ошибочен:");
+    }
+    init1.products = [];
+    for (var i = 0; i < init1.amount; i++) {
+      init1.products[i] = {};
+      init1.products[i].title = prompt("Введите наименование "  + (i + 1) + "-го продукта:");
+      init1.products[i].price = prompt("Введите цену продукта " + init1.products[i].title);
+      while (+init1.products[i].price !== +init1.products[i].price || +init1.products[i].price <= 0) {
+        init1.products[i].price = prompt("Вы указали цену в необычном формате, попробуйте еще раз!");
+      }
+    }
+    output1();
+  }
+
+  function output1() {
+    console.log("Название магазина: " + init1.store);
+    console.log("Количество продуктов: " + init1.amount);
+    console.log("Продукты в магазине:");
+    
+    for (var i = 0; i < init1.amount; i++) {
+      console.log("Продукт - " + init1.products[i].title + ", цена - " + init1.products[i].price + "\u20BD");
+    }
+  }
+
+  shop1.init1();
+  console.log(shop1);
 }
-init();
-alert(orthography.text);
 
-// Третье задание -----------------------------
-
-var slice = {
-  getSlice: getSlice,
-  init: init
+function task2() {
+  // Второе задание -----------------------------
+  var  orthography = {
+    letterUp: letterUp,
+    init: init,
+  }
+  function letterUp() {
+    var target = ".",
+        textUp = "",
+        foundPos,
+        pos = 0;
+    while (true) {
+      foundPos = orthography.text.indexOf(target, pos);
+      if (foundPos == -1) break;
+      for (var i = pos; i <= foundPos; i++) {
+        if ( i == pos || i == (pos + 1) && i != 1) {
+          textUp += orthography.text.charAt(i).toUpperCase();
+        } else {
+          textUp += orthography.text.charAt(i);
+        }
+      }
+      pos = foundPos + 1;
+    }
+    orthography.text = textUp;
+  }
+  
+  function init() {
+    orthography.text = prompt("Введите текст");
+    while (!orthography.text) {
+      orthography.text = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
+    }
+    orthography.letterUp();
+  }
+  init();
+  alert(orthography.text);
 }
 
-function getSlice() {
-  var foundPos = slice.inputTextLower.indexOf("кукушка", 0);
-  slice.outputText = slice.inputText.slice(0, foundPos);
-}
+function task3() {
+    // Третье задание -----------------------------
 
-function init() {
-  slice.inputText = prompt("Введите текст, в коротом обязательно присутствует слово Кукушка");
-  slice.inputTextLower = slice.inputText.toLowerCase();
-  while (!slice.inputText || slice.inputTextLower.indexOf("кукушка", 0) == -1) {
-    slice.inputText = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
+  var slice = {
+    getSlice: getSlice,
+    init: init
+  }
+
+  function getSlice() {
+    var foundPos = slice.inputTextLower.indexOf("кукушка", 0);
+    slice.outputText = slice.inputText.slice(0, foundPos);
+  }
+
+  function init() {
+    slice.inputText = prompt("Введите текст, в коротом обязательно присутствует слово Кукушка");
     slice.inputTextLower = slice.inputText.toLowerCase();
+    while (!slice.inputText || slice.inputTextLower.indexOf("кукушка", 0) == -1) {
+      slice.inputText = prompt("Что-то пошло не так, попробуйте еще раз ввести текст");
+      slice.inputTextLower = slice.inputText.toLowerCase();
+    }
+    slice.getSlice();
   }
-  slice.getSlice();
+  init();
+  console.log(slice.inputText);
+  console.log(slice.inputTextLower);
+  console.log(slice.outputText);
 }
-init();
-console.log(slice.inputText);
-console.log(slice.inputTextLower);
-console.log(slice.outputText);
 
-//  четвертое задание ----------------------------------------
+function task4() {
+  //  четвертое задание ----------------------------------------
 
- var shop = {
+  var shop = {
     name,
     products,
     init: init,
@@ -141,16 +153,16 @@ console.log(slice.outputText);
     changePrice: changePrice,
     searchPrice: searchPrice,
     searchName: searchName
-}
-  
-function init() {
+  }
+
+  function init() {
   shop.name = prompt("Введите название магазина:");
   shop.products = [];
   shop.inputProducts();
   shop.controlPanel();
-}
+  }
 
-function inputProducts() {
+  function inputProducts() {
   while (true) {
     var i = shop.products.length,
     firstEntry = "";
@@ -168,9 +180,9 @@ function inputProducts() {
       }
     if (!confirm("Добавить еще товар?")) break;
   }
-}
+  }
 
-function controlPanel() {
+  function controlPanel() {
   var title = "Панель управления магазином \"" + shop.name + "\". " + "Введите номер пункта желаемого действия: \n",
       point_1 = "1. Добавить новый товар в конец списка \n",
       point_2 = "2. Удалить товар по номеру в списке \n",
@@ -200,9 +212,9 @@ function controlPanel() {
     }
     checkPoint();
   }
-}
+  }
 
-function checkPoint() {
+  function checkPoint() {
   var i = shop.controlPanel.point;
   if (i == 1) {
     shop.inputProducts();
@@ -217,9 +229,9 @@ function checkPoint() {
   } else if (i == 6) {
     alert(shop.outputProducts());
   }
-}
+  }
 
-function delProduct() {
+  function delProduct() {
   var len = shop.products.length;
   if(!len) {
     alert("Ваш магазин пуст, удалять больше нечего!");
@@ -235,18 +247,18 @@ function delProduct() {
   }
   shop.products.splice((+i - 1), 1);
   if (confirm("Хотите удалить еще товар?")) delProduct();
-}
+  }
 
-function outputProducts() {
+  function outputProducts() {
   var list = "",
     len = shop.products.length;
   for (var i = 0; i < len; i++) {
     list += ((i + 1) + ". " + shop.products[i].title + " - " + shop.products[i].price + "\u20BD \n");
   }
   return list;
-}
+  }
 
-function changePrice() {
+  function changePrice() {
   var len = shop.products.length;
   if(!len) {
     alert("Ваш магазин пуст, поменять цену не получится!");
@@ -266,9 +278,9 @@ function changePrice() {
     shop.products[i].price = prompt("Вы указали цену в необычном формате, попробуйте еще раз!");
     }
   if (confirm("Хотите еще внести измения в ценах?")) shop.changePrice();
-}
+  }
 
-function searchPrice() {
+  function searchPrice() {
   var price = prompt("Введите цену для поиска товара по цене:"),
     len = shop.products.length,
     list = "",
@@ -288,9 +300,9 @@ function searchPrice() {
     alert(list);
   }
   if (confirm(msg + "Выполнить поиск заново?")) shop.searchPrice();
-}
+  }
 
-function searchName() {
+  function searchName() {
   var len = shop.products.length;
   if(!len) {
     alert("Ваш магазин пуст, поиск не удастся!");
@@ -310,7 +322,6 @@ function searchName() {
     alert(list);
   }
   if (confirm(msg + "Выполнить поиск заново?")) shop.searchName();
+  }
+  shop.init();
 }
-shop.init();
-
-}, 4000);
