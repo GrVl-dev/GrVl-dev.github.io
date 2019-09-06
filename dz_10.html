@@ -1,0 +1,109 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <title>DL Academy || JS || Lesson №10</title>
+</head>
+<body>
+    <header class="header">
+  <div class="container">
+    <div class="header__content">
+      <div class="header__logo-box">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img src="./img/icon.png" alt="Direct Line Academy" srcset="">
+          </a>
+        </div>
+        <div class="header__logo-title">
+          <div class="header__logo-title-name">DL ACADEMY</div>
+          <div class="header__logo-title-text">JAVASCRIPT COURSE</div>
+        </div>
+      </div>
+      <div class="header__links">
+        <a href="./index.html" class="header__links-item header__links-item_js">Lesson №1</a>
+        <a href="./dz_2.html" class="header__links-item header__links-item_js">Lesson №2</a>
+        <a href="./dz_3.html" class="header__links-item header__links-item_js">Lesson №3</a>
+        <a href="./dz_4.html" class="header__links-item header__links-item_js">Lesson №4</a>
+        <a href="./dz_5.html" class="header__links-item header__links-item_js">Lesson №5</a>
+        <a href="./dz_6.html" class="header__links-item header__links-item_js">Lesson №6</a>
+        <a href="./dz_7.html" class="header__links-item header__links-item_js">Lesson №7</a>
+        <a href="./dz_8.html" class="header__links-item header__links-item_js">Lesson №8</a>
+        <a href="./dz_9.html" class="header__links-item header__links-item_js">Lesson №9</a>
+        <a href="./dz_10.html" class="header__links-item header__links-item_js">Lesson №10</a>
+        <a href="" class="header__links-item header__links-item_js">Lesson №11</a>
+        <a href="" class="header__links-item header__links-item_js">Lesson №12</a>
+        <a href="" class="header__links-item header__links-item_js">Lesson №13</a>
+        <a href="" class="header__links-item header__links-item_js">Lesson №14</a>
+        <a href="" class="header__links-item header__links-item_js">Lesson №15</a>
+        <a href="" class="header__links-item header__links-item_js">Lesson №16</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="dz-10">
+        <div class="container">
+            <div class="dz-10__content">
+                <h1 class="dz-10__title">Домашнее задание №10</h1>
+                <div class="dz-10__shops">
+                    <div class="dz-10__shop-food">
+                        <h2 class="dz-10__shop-food-title">Магазин продуктов</h2>
+                        <div class="dz-10__shop-food-list"></div>
+                    </div>
+                    <div class="dz-10__shop-games">
+                        <h2 class="dz-10__shop-games-title">Магазин видеоигр</h2>
+                        <div class="dz-10__shop-games-list"></div>
+                    </div>
+                </div>
+                <div class="dz-10__shops-control">
+                    <div class="dz-10__input-data">
+                        <form class="dz-10__input-data-form" onsubmit="return false;">
+                            <select class="dz-10__shop-selection">
+                                <option disabled selected>Выберите магазин</option>
+                                <option>Магазин продуктов</option>
+                                <option>Магазин видеоигр</option>
+                            </select>
+                            <select class="dz-10__action-selection">
+                                <option disabled selected>Выберите действие</option>
+                                <option>Добавить новый товар</option>
+                                <option>Поиск товара по названию</option>
+                                <option>Поиск товара по номеру</option>
+                                <option>Удаление товара по названию</option>
+                                <option>Поиск товара по дипазону цены</option>
+                                <option>Редактирование названия и цены товара по номеру</option>
+                            </select>
+                            <input name = "product" class = "dz-10__input-product" 
+                                    type="text" placeholder="введите название товара">
+                            <div class="dz-10__input-price">
+                                <span>Введите цену</span>
+                                <input name = "rub" class = "dz-10__input-rub"
+                                        type="number" placeholder="00" min="0" value="0">
+                                <span>руб</span>
+                                <input name = "kop" class = "dz-10__input-kop"
+                                        type="number" placeholder="00" min="0"  max="99" value="0">
+                                <span>коп</span>
+                            </div>
+                            <input name = "num" class = "dz-10__input-num"
+                                    type="number" placeholder="00" min="0" value="0">
+                            <div class="dz-10__search-price">
+                                <span>Введите диапазон цены от</span>
+                                <input name = "min" class = "dz-10__input-min"
+                                        type="number" placeholder="00" min="0" value="0">
+                                <span>руб, до</span>
+                                <input name = "max" class = "dz-10__input-max"
+                                        type="number" placeholder="00" min="0" value="0">
+                                <span>руб</span>
+                            </div>
+                            <input class = "dz-10__input-submit" type="submit" value="принять">
+                        </form>
+                    </div>
+                    <div class="dz-10__output-data"></div>
+                </div>
+            </div>                
+        </div>
+    </main>
+</body>
+<script src="./js/dz_10.js"></script>
+</html>

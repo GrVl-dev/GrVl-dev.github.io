@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
-  <title>DL Academy || JS || Lesson №1</title>
+  <title>DL Academy || JS || Lesson №7</title>
 </head>
 <body>
     <header class="header">
@@ -43,15 +43,39 @@
   </div>
 </header>
 
-    <main class="dz_1">
-        <div class="container">
-            <div class="dz_1__content">
-                <h1 class="dz_1__title">Домашнее задание №1</h1>
-                <div>1. Введенное число возводится во вторую степень</div>
-                <div>2. Простейший калькулятор</div>
-            </div>                
-        </div>
+    <main class="dz-7">
+            <div class="container">
+                <div class="dz-7__content">
+                  <h1 class="dz-7__title">Домашнее задание №7</h1>
+                  <div class="list">
+                    <div class="list__items">
+                      <h2 class="list__items-title">Список дел</h2> 
+                    <ol class="list__item-box list__item-box_js"></ol>
+                    </div>
+                    <div class="list__control list__control_js">
+                      <h2 class="list__control-title list__control-title_js">Выберите действие</h2>
+                      <form class="list__input-select-box list__input-select-box_js">
+                        <input type="radio" name="control" class="list__input-select list__input-select_js" value="add"> добавить
+                        <input type="radio" name="control" class="list__input-select list__input-select_js" value="del"> удалить
+                        <input type="radio" name="control" class="list__input-select list__input-select_js" value="edit"> редактировать
+                      </form>
+                    </div>
+                    <div class="list__button list__button_js">Принять</div>
+                  </div>
+                  
+                  <div class="temp">
+                    <div class="temp__c-block">
+                      <div class="temp__name">Введите температуру по Цельсию</div>
+                      <input type="number" class="temp__val temp__cels_js" size="2">
+                    </div>
+                    <div class="temp__f-block">
+                      <div class="temp__name">Температура по Фаренгейту</div>
+                      <div class="temp__val temp__far_js"></div>
+                    </div>
+                  </div>
+                </div>                
+            </div>
     </main>
 </body>
-<script src="./js/dz_1.js"></script>
+<script src="./js/dz_7.js"></script>
 </html>
