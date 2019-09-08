@@ -50,22 +50,22 @@
                 <div class="dz-10__shops">
                     <div class="dz-10__shop-food">
                         <h2 class="dz-10__shop-food-title">Магазин продуктов</h2>
-                        <div class="dz-10__shop-food-list"></div>
+                        <div class="dz-10__shop-food-list dz-10__shop-food-list_js"></div>
                     </div>
                     <div class="dz-10__shop-games">
                         <h2 class="dz-10__shop-games-title">Магазин видеоигр</h2>
-                        <div class="dz-10__shop-games-list"></div>
+                        <div class="dz-10__shop-games-list dz-10__shop-games-list_js"></div>
                     </div>
                 </div>
                 <div class="dz-10__shops-control">
                     <div class="dz-10__input-data">
-                        <form class="dz-10__input-data-form" onsubmit="return false;">
-                            <select class="dz-10__shop-selection">
+                        <form class="dz-10__input-data-form dz-10__input-data-form_js" onsubmit="return false;">
+                            <select class="dz-10__shop-selection dz-10__shop-selection_js">
                                 <option disabled selected>Выберите магазин</option>
                                 <option>Магазин продуктов</option>
                                 <option>Магазин видеоигр</option>
                             </select>
-                            <select class="dz-10__action-selection">
+                            <select class="dz-10__action-selection dz-10__action-selection_js">
                                 <option disabled selected>Выберите действие</option>
                                 <option>Добавить новый товар</option>
                                 <option>Поиск товара по названию</option>
@@ -74,9 +74,9 @@
                                 <option>Поиск товара по дипазону цены</option>
                                 <option>Редактирование названия и цены товара по номеру</option>
                             </select>
-                            <input name = "product" class = "dz-10__input-product" 
+                            <input name = "product" class = "dz-10__input-product dz-10__input-product_js"  
                                     type="text" placeholder="введите название товара">
-                            <div class="dz-10__input-price">
+                            <div class="dz-10__input-price dz-10__input-price_js">
                                 <span>Введите цену</span>
                                 <input name = "rub" class = "dz-10__input-rub"
                                         type="number" placeholder="00" min="0" value="0">
@@ -85,9 +85,9 @@
                                         type="number" placeholder="00" min="0"  max="99" value="0">
                                 <span>коп</span>
                             </div>
-                            <input name = "num" class = "dz-10__input-num"
+                            <input name = "num" class = "dz-10__input-num dz-10__input-num_js"
                                     type="number" placeholder="00" min="0" value="0">
-                            <div class="dz-10__search-price">
+                            <div class="dz-10__search-price dz-10__search-price_js">
                                 <span>Введите диапазон цены от</span>
                                 <input name = "min" class = "dz-10__input-min"
                                         type="number" placeholder="00" min="0" value="0">
@@ -96,10 +96,10 @@
                                         type="number" placeholder="00" min="0" value="0">
                                 <span>руб</span>
                             </div>
-                            <input class = "dz-10__input-submit" type="submit" value="принять">
+                            <input class = "dz-10__input-submit dz-10__input-submit_js" type="submit" value="принять">
                         </form>
                     </div>
-                    <div class="dz-10__output-data"></div>
+                    <div class="dz-10__output-data dz-10__output-data_js"></div>
                 </div>
             </div>                
         </div>

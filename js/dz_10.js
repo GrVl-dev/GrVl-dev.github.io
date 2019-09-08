@@ -1,20 +1,20 @@
 var here = document.querySelectorAll('.header__links-item_js');
 here[9].style.color = '#3590CC';
 
-var form = document.querySelector('.dz-10__input-data-form')
-    selectShop = document.querySelector('.dz-10__shop-selection'),
-    selectAction = document.querySelector('.dz-10__action-selection'),
+var form = document.querySelector('.dz-10__input-data-form_js')
+    selectShop = document.querySelector('.dz-10__shop-selection_js'),
+    selectAction = document.querySelector('.dz-10__action-selection_js'),
     itemSelectShop = selectShop.options,
     itemAction = selectAction.options,
-    formProduct = document.querySelector('.dz-10__input-product'),
-    formPrice = document.querySelector('.dz-10__input-price'),
-    inputPrice = document.querySelector('.dz-10__input-price').children,
-    formNumProduct = document.querySelector('.dz-10__input-num'),
-    formRangePrice = document.querySelector('.dz-10__search-price'),
-    formSubmit = document.querySelector('.dz-10__input-submit'),
-    message = document.querySelector('.dz-10__output-data'),
-    foodList = document.querySelector('.dz-10__shop-food-list'),
-    gamesList = document.querySelector('.dz-10__shop-games-list'),
+    formProduct = document.querySelector('.dz-10__input-product_js'),
+    formPrice = document.querySelector('.dz-10__input-price_js'),
+    inputPrice = document.querySelector('.dz-10__input-price_js').children,
+    formNumProduct = document.querySelector('.dz-10__input-num_js'),
+    formRangePrice = document.querySelector('.dz-10__search-price_js'),
+    formSubmit = document.querySelector('.dz-10__input-submit_js'),
+    message = document.querySelector('.dz-10__output-data_js'),
+    foodList = document.querySelector('.dz-10__shop-food-list_js'),
+    gamesList = document.querySelector('.dz-10__shop-games-list_js'),
     shop = 0;
 
 var shopFood = {
@@ -64,7 +64,6 @@ selectAction.onchange = function() {
                 var name = formProduct.value,
                     price,
                     point;
-                    console.log(inputPrice[3].value);
                 if(inputPrice[3].value.length < 2) {
                     point = ".0"
                 } else {
@@ -199,26 +198,30 @@ function productVisible() {
 }
 
 function searchByName(name) {
-    var len = this.store.length;
-    var list = "";
+    var len = this.store.length,
+        check, 
+        result = "";
+
     if(!len) {
-        list = "Магазин пуст"
-        return list;
+        result = "Магазин пуст"
+        return result;
     }
-      
-    for (i = 0; i < len; i++ ) {
-      if (name == this.store[i].name) {
-        list += ("<div>" + (i+1) + ". " + this.store[i].name + " - " + this.store[i].price + " \u20BD </div>");
-      }
+
+    for (var i = 0; i < len; i++) {
+        check = this.store[i].name.indexOf(name);
+        if(check != -1) {
+            result += ("<div>" + (i+1) + ". " + this.store[i].name + " - " + this.store[i].price + " \u20BD </div>")
+        }
     }
-    if (!list) {
-        list = "товар не найден"
-      return list;
+
+    if (!result) {
+        result = "товар не найден"
+        return result;
     } else {
-      return list;
+        return result;
     }
 }
-// opt[2].disabled = true; 
+
 
 // На уроке ---------------------
 /* function exp(num, pow = 2) {

@@ -1,3 +1,8 @@
+// ДОМАШНЕЕ ЗАДАНИЕ
+var here = document.querySelectorAll('.header__links-item_js');
+here[10].style.color = '#3590CC';
+
+// НА УРОКЕ ----------------------------------
 // function loadScript(src, callback) {
 //     var script = document.createElement("script");
 //     script.src = src;
@@ -31,18 +36,18 @@
 //     .catch(err => console.log(err))
 //     .finally(()=> console.log("промис отработал"))
 
-var loadScript = function (src) {
-    return new Promise(function(resolve, reject) {
-        var script = document.createElement("script");
-        script.src = src;
-        script.onload = () => resolve(user);
-        script.onerror = () => reject({message: "не нашли файл", code: 404});
-        document.head.append(script);
-    });
-}
+// var loadScript = function (src) {
+//     return new Promise(function(resolve, reject) {
+//         var script = document.createElement("script");
+//         script.src = src;
+//         script.onload = () => resolve(user);
+//         script.onerror = () => reject({message: "не нашли файл", code: 404});
+//         document.head.append(script);
+//     });
+// }
 
 
-loadScript("./js/dz_11-2.js")
-    .then(secondPayload => console.log(secondPayload))
-    .catch(err => console.log(err))
-    .finally(()=> console.log("промис отработал"))
+// loadScript("./js/dz_11-2.js")
+//     .then(secondPayload => console.log(secondPayload))
+//     .catch(err => console.log(err))
+//     .finally(()=> console.log("промис отработал"))
