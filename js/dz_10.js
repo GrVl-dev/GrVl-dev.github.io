@@ -61,11 +61,11 @@ selectAction.onchange = function() {
         formNumProduct.style.display = "none";
         formSubmit.onclick = function() {
             if (checkInput(formProduct, inputPrice[3])) {
-
                 var name = formProduct.value,
                     price,
                     point;
-                if(inputPrice[3].length < 2) {
+                    console.log(inputPrice[3].value);
+                if(inputPrice[3].value.length < 2) {
                     point = ".0"
                 } else {
                     point = "."
@@ -97,10 +97,20 @@ selectAction.onchange = function() {
         formRangePrice.style.display = "none";
         formSubmit.onclick = function() {
             if (checkInput(formProduct)) {
-                console.log(formProduct.value);
-                var product =formProduct.value,
-                    result = shopFood.searchByName(product);
-                message.innerHTML = "Товар " + result.name + " по цене " + result.price + " руб, найден" 
+                if (shop == 1) {
+                    var product = shopFood.searchByName(formProduct.value);
+                    message.innerHTML = product;
+                    setTimeout (function() {
+                        message.innerHTML ="";
+                    }, 6000)
+                } else {
+                    var product = shopGames.searchByName(formProduct.value);
+                    message.innerHTML = product;
+                    setTimeout (function() {
+                        message.innerHTML ="";
+                    }, 6000)
+                }
+
             } else {
                 message.innerHTML ="вы ввели не все данные";
                 setTimeout (function() {
@@ -188,15 +198,25 @@ function productVisible() {
     return itemProduct;
 }
 
-function searchByName(item) {
-   for (var i = 0; i < this.store.length; i++) {
-       if(item in this.store[i]) {
-           console.log(this.store);
-           return this.store[i];
-       } else {
-           return "Ничего не найдено";
-       }
-   }
+function searchByName(name) {
+    var len = this.store.length;
+    var list = "";
+    if(!len) {
+        list = "Магазин пуст"
+        return list;
+    }
+      
+    for (i = 0; i < len; i++ ) {
+      if (name == this.store[i].name) {
+        list += ("<div>" + (i+1) + ". " + this.store[i].name + " - " + this.store[i].price + " \u20BD </div>");
+      }
+    }
+    if (!list) {
+        list = "товар не найден"
+      return list;
+    } else {
+      return list;
+    }
 }
 // opt[2].disabled = true; 
 
