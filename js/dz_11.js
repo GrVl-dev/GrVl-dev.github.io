@@ -64,7 +64,7 @@ var loadPromise = function (src) {
   return new Promise(function(resolve, reject) {
     var script = document.createElement("script"),
         div = document.createElement("div");
-    div.className = "message";
+    div.className = "message_js";
     div.innerText = `файл "${src}" загружен`;
     script.src = src;
     script.onload = () => resolve(div);
