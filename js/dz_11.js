@@ -2,51 +2,35 @@
 var here = document.querySelectorAll('.header__links-item_js');
 here[10].style.color = '#3590CC';
 
-// загружаем скрипт с отсчетом времени---------------------
+// загружаем скрипты по очереди---------------------
 loadScript("./js/dz_11_time.js", function (err) {
   if(err) {
     console.log("error")
   } else {
     console.log('script "dz_11_time.js" loaded');
+    loadScript("./js/dz_11_lamp.js", function (err) {
+      if(err) {
+        console.log("error")
+      } else {
+        console.log('script "dz_11_lamp.js" loaded');
+        loadScript("./js/dz_11_parallax.js", function (err) {
+          if(err) {
+            console.log("error")
+          } else {
+            console.log('script "dz_11_parallax.js" loaded');
+            loadScript("./js/dz_11_slider.js", function (err) {
+              if(err) {
+                console.log("error")
+              } else {
+                console.log('script "dz_11_slider.js" loaded');
+              }
+            });
+          }
+        });
+      }
+    });
   }
 });
-
-// загружаем скрипт с лампочкой----------------------------
-loadScript("./js/dz_11_lamp.js", function (err) {
-  if(err) {
-    console.log("error")
-  } else {
-    console.log('script "dz_11_lamp.js" loaded');
-  }
-});
-
-//загружаем скрипт с параллакс эффектом---------------------
-
-loadScript("./js/dz_11_parallax.js", function (err) {
-  if(err) {
-    console.log("error")
-  } else {
-    console.log('script "dz_11_parallax.js" loaded');
-  }
-});
-
-//загружаем скрипт со слайдером------------------------
-function loadScript(src, callback) {
-  var script = document.createElement("script");
-  script.src = src;
-  script.onload = () => callback(null);
-  script.onerror = () => callback({message: "не нашли файл", code: 404});
-  document.head.append(script);
-}
-
-loadScript("./js/dz_11_slider.js", function (err) {
-  if(err) {
-    console.log("error")
-  } else {
-    console.log('script "dz_11_slider.js" loaded');
-  }
-});
-
 
 
 
