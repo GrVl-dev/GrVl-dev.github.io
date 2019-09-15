@@ -1,7 +1,7 @@
 var here = document.querySelectorAll('.header__links-item_js');
 here[11].style.color = '#3590CC';
 
-// 1 задание --------------------
+// 1 задание --------------------------
 var loadScript = function (src) {
     return new Promise(function (resolve, reject) {
         var script = document.createElement("script");
@@ -22,7 +22,7 @@ Promise.all([
     })
     .catch(err => {console.error(err)})
 
-//2 задание -------------------------------
+//2 задание ----------------------------------
 
 var user = '{ name: "Vladimir" }';
 
@@ -141,4 +141,6 @@ Promise.all([loadScript2("./js/dz_11_slider.js", 1), loadScript2("./js/dz_11_par
 // }
 
 // waitSec();
+
+
 
