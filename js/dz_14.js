@@ -101,11 +101,11 @@ submitDel.onclick = function() {
     return false;
 }
 
-async function post(title, text) {
+function post(title, text) {
     var oldArticles = document.querySelectorAll('.dz-14__addBlock_js'),
         num = oldArticles.length;
     if (!title || !text) return;
-    await fetch("http://localhost/blog", {
+    fetch("http://localhost/blog", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
@@ -132,8 +132,8 @@ async function post(title, text) {
         });
 };
 
-async function get(target) {
-    await fetch(target)
+function get(target) {
+    fetch(target)
         .then(res => res.json())
         .then(res => {
             for(var i = 0; i < res.length; i++) {
@@ -143,18 +143,19 @@ async function get(target) {
             }
         })
         .catch(err => {
-            console.log(err);
-            var err = document.createElement('div');
-            err.innerHTML = 'СЕРВЕР НЕ ДОСТУПЕН';
-            err.className = 'dz-14__err';
-            articles.insertAdjacentElement('beforeend', err);
+            console.log(`${err.name} - ${err.message}`);
+            var error = document.createElement('div');
+            error.innerHTML = 'СЕРВЕР НЕ ДОСТУПЕН';
+            error.className = 'dz-14__err';
+            articles.insertAdjacentElement('beforeend', error);
         });
+
 };
 
-async function del(id) {
+function del(id) {
     if(!numCheck.test(id)) return;
     var articleDel = document.querySelector(`.id_${id}_js`);
-    await fetch("http://localhost/blog", {
+    fetch("http://localhost/blog", {
         method: "DELETE",
         headers: {
             'Content-Type': 'application/json',
@@ -173,8 +174,8 @@ async function del(id) {
         });
 }
 
-async function put(title, text, id){
-    await fetch("http://localhost/blog", {
+function put(title, text, id){
+    fetch("http://localhost/blog", {
     method: "PUT",
     headers: {
         'Content-Type': 'application/json'
