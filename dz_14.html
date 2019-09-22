@@ -46,6 +46,66 @@
     <main class="dz-14">
             <div class="container">
                 <div class="dz-14__content dz-14__content_js">
+                    <h1 class="dz-14__title">Домашнее задание №14</h1>
+                    <article class="dz-14__pass-block">
+                        <form name="password" class="dz-14__password">
+                          Введите пароль
+                          <input type="password" name="field" value="" class="dz-14__password-field dz-14__password-field_js">
+                          <input type="submit" value="OK" class="dz-14__password-btn dz-14__password-btn_js">
+                        </form>
+                        <div class="dz-14__password-condition">
+                          Пароль должен быть от 4-12 символов(латиница), содержать только строчные буквы, любые числа и символ “_”
+                        </div>
+                        <div class="dz-14__password-result_js"></div>
+                    </article>
+                    <section class="dz-14__blog-block">
+                      <h2 class="dz-14__blog-title">мой блог</h2>
+                      <div class="dz-14__articles dz-14__articles_js"></div>
+                      <div class="dz-14__blog-control">
+                        <div class="dz-14__blog-add">
+                          <h3 class="dz-14__add-title">Добавить новую статью:</h3>
+                          <form name="addArticle" class="dz-14__form-addArticle">
+                            <div class="dz-14__add-name">
+                                Заголовок
+                                <input type="text" name="title" required>
+                            </div>
+                            <div class="dz-14__add-article">
+                                Статья
+                                <textarea name="article" class="dz-14__new-article"></textarea>    
+                            </div>
+                            <input type="submit" value="OK" class="dz-14__submit-add dz-14__submit-add_js">
+                          </form>
+                        </div>
+                        <div class="dz-14__blog-put">
+                          <h3 class="dz-14__put-title">Редактировать статью:</h3>
+                          <form name="putArticle" class="dz-14__form-putArticle">
+                            <div class="dz-14__put-number">
+                              Номер ID
+                              <input type="text" name="number" required>
+                            </div>
+                            <div class="dz-14__put-name">
+                                Заголовок
+                                <input type="text" name="title" required>
+                            </div>
+                            <div class="dz-14__put-article">
+                                Статья
+                                <textarea name="article" class="dz-14__new-article"></textarea>    
+                            </div>
+                            <input type="submit" value="OK" class="dz-14__submit-put dz-14__submit-put_js">
+                          </form>
+                        </div>
+                        <div class="dz-14__blog-del">
+                          <h3 class="dz-14__del-title">Удалить статью:</h3>
+                          <form name="delArticle" class="dz-14__form-delArticle">
+                            <div class="dz-14__del-number">
+                              Номер ID
+                              <input type="text" name="number" required>
+                            </div>
+                            <input type="submit" value="OK" class="dz-14__submit-del dz-14__submit-del_js">
+                          </form>
+                          </div>
+                      </div>
+                    </section>
                 </div>        
             </div>
     </main>
