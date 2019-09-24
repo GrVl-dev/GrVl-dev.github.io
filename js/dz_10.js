@@ -22,7 +22,7 @@ var shopFood = {
     store: [],
     addProduct: addProduct,
     productVisible: productVisible,
-    searchByName: searchByName,
+    searchByName: searchByName
     // searchByNumber: searchByNumber,
 }
 
@@ -31,7 +31,7 @@ var shopGames = {
     store: [],
     addProduct: addProduct,
     productVisible: productVisible,
-    searchByName: searchByName,
+    searchByName: searchByName
 }
 
 selectShop.onchange = function() {
