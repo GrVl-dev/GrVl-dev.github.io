@@ -1,0 +1,14 @@
+.main {
+
+   padding-top: 80px;
+   background-color: #FAFAFA;
+}
+.main__content {
+   display: flex;
+   justify-content: space-between;
+}
+@media (max-width: 1000px) {
+   .main__content {
+      justify-content: center;
+   }
+}

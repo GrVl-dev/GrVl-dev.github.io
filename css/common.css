@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI Light';
+    font-size: 14px;
+}
+    
+a {
+    text-decoration: none;
+    color: black;
+}
+    
+ .container {
+    max-width: 935px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
