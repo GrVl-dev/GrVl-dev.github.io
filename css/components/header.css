@@ -1,5 +1,10 @@
 
 .header {
+    display: grid;
+    grid-template-columns: minmax(0px, auto) repeat(3, minmax(auto, 312px)) minmax(0px, auto);
+    grid-gap: 20px;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
     position: fixed;
     top: 0;
     width: 100%;
@@ -10,8 +15,9 @@
 }
 
 .header__content {
-    height: 54px;
     display: flex;
+    grid-column: 2 / 5;
+    height: 54px;
     align-items: center;
     justify-content: space-between;
 }
@@ -26,9 +32,10 @@ input.header__search {
     width: 215px;
     height: 28px;
     background: #FAFAFA;
+    outline: none;
 }
 
-.header__search::placeholder {
+input.header__search::placeholder {
     color: #999999;
     font-size: 14px;
 }

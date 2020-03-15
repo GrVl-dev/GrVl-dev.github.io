@@ -1,8 +1,9 @@
 .news-card {
     border: 1px solid #DBDBDB;
     border-radius: 2px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background: white;
+    max-width: 600px;
 }
 .news-card__header {
     display: flex;
@@ -87,14 +88,21 @@
     align-items: center;
     height: 100%;
 }
-.news-card__comment-area input {
+.news-card__comment-area textarea {
     border: none;
     height: 24px;
     width: 100%;
+    outline: none;
+    resize: none;
+}
+.news-card__comment-area textarea:focus {
+    height: 100%;
 }
 .news-card__comment-area button {
     border: none;
     background: none;
     color: #7897F0;
     font-weight: 800;
+    cursor: pointer;
+    outline: none;
 }
