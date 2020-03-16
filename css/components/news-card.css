@@ -95,9 +95,7 @@
     outline: none;
     resize: none;
 }
-.news-card__comment-area textarea:focus {
-    height: 100%;
-}
+
 .news-card__comment-area button {
     border: none;
     background: none;
