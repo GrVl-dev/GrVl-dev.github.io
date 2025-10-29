@@ -1,16 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BRICS</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <div class="img">
-      <img src="/img/v_razrabotke.jpg" alt="" srcset="">
-    </div>
-  </div>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ОКНО-ГОСТ</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="FontAwesome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="FontAwesome/css/brands.min.css" />
+        <link rel="stylesheet" href="FontAwesome/css/solid.min.css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand d-flex" href="index.html">
+                    <img src="assets/img/logo.png" style="height: 45px;" />
+                    <div class="fs-2 mx-2 my-0 align-self-center">ОКНО-<b class="text-white-50">ГОСТ</b></div>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/about.html">О НАС</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/works.html">НАШИ РАБОТЫ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/news.html">новости</a></li>
+                        <li class="nav-item mx-0"><a class="nav-link pe-0" href="pages/products.html">ПРОДУКЦИЯ</a></li>
+                        <li class="nav-item"><a class="nav-link d-lg-none" href="pages/contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="d-flex flex-column align-items-center justify-content-between index-bg text-light">
+            <div class="container d-flex flex-column align-items-center pt-5">
+                <h1 class="text-uppercase mt-5 pt-5 text-center" style="letter-spacing: 3px;">всё для окон в тольятти</h1>
+                <a class="h4 mb-0" href="tel:+78482617761" style="letter-spacing: 3px;">+7(8482)61-77-61</a>
+                <a class="h4 mb-0" href="tel:+79879091414" style="letter-spacing: 3px;">+7(987)909-14-14</a>
+            </div>
+            <div class="p-2 m-5 pb-5">
+                <a href="pages/news.html">
+                    <marquee class="text-uppercase text-center" style="letter-spacing: 3px;">АКЦИЯ! Сделай заказ до 30 апреля и получи скидку до 5000&#8381;</marquee>
+                </a>
+            </div>
+        </header>
+        <!--  Main Grid-->
+        <section class="page-section bg-light ">
+            <div class="container px-4 content">
+                <div class="row shift">
+                    <div class="col-lg-7 mb-4 text-uppercase" style="min-height: 300px;">
+                        <!-- card item calc-->
+                        <div class="card card-bg-4 text-bg-dark h-100">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h3 class="card-title mb-3 text-center text-xl-start">Расчет стоимости окон</h3>
+                                <div class="row">
+                                    <div class="d-flex flex-wrap col-lg-5 col-md-12 justify-content-center align-items-center mb-2" id="classBases" style="height: max-content;">
+                                        <input type="radio" class="btn-check" name="win-class" id="econom"  onclick="viewChecked();">
+                                        <label class="btn btn-sm btn-outline-light m-1 mx-2" for="econom" style="min-width: 80px;">Эконом</label>
+        
+                                        <input type="radio" class="btn-check" name="win-class" id="standart" onclick="viewChecked();" checked>
+                                        <label class="btn btn-sm btn-outline-light m-1 mx-2 px-1" for="standart" style="min-width: 80px;">Стандарт</label>
+                                        
+                                        <input type="radio" class="btn-check" name="win-class" id="elite" onclick="viewChecked();">
+                                        <label class="btn btn-sm btn-outline-light m-1 mx-2" for="elite" style="min-width: 80px;">Элит</label>
+                                    </div>
+                                    <div class="col-lg-2 col-md-12 px-2 d-flex justify-content-center mb-2" id="win-img">
+                                    </div>
+                                    <div class="d-flex justify-content-lg-between justify-content-center flex-nowrap col-lg-5 col-md-12 mb-2">
+                                        <div class="dropdown-center mx-2">
+                                            <button class="btn win-2" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            </button>
+                                            <div class="dropdown-menu" style="border-radius: 0;">
+                                                <input type="radio" class="btn-check" name="win-type" id="twoOne" autocomplete="off" onclick="viewChecked();" checked>
+                                                <label class="dropdown-item btn btn-outline-primary" style="border-radius: 0;" for="twoOne">
+                                                    <img src="assets/img/calc/okno_2_1.png" alt="">
+                                                </label>
+                                                <input type="radio" class="btn-check" name="win-type" id="twoTwo" autocomplete="off" onclick="viewChecked();">
+                                                <label class="dropdown-item btn btn-outline-primary" style="border-radius: 0;" for="twoTwo">
+                                                    <img src="assets/img/calc/okno_2_2.png" alt="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-center mx-2">
+                                            <button class="btn win-3" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            </button>
+                                            <div class="dropdown-menu" style="border-radius: 0;">
+                                                <input type="radio" class="btn-check" name="win-type" id="threeOne" autocomplete="off" onclick="viewChecked();">
+                                                <label class="dropdown-item btn btn-outline-primary" style="border-radius: 0;" for="threeOne">
+                                                    <img src="assets/img/calc/okno_3_1.png" alt="">
+                                                </label>
+                                                <input type="radio" class="btn-check" name="win-type" id="threeTwo" autocomplete="off" onclick="viewChecked();">
+                                                <label class="dropdown-item btn btn-outline-primary" style="border-radius: 0;" for="threeTwo">
+                                                    <img src="assets/img/calc/okno_3_2.png" alt="">
+                                                </label>
+                                                <input type="radio" class="btn-check" name="win-type" id="threeThree" autocomplete="off" onclick="viewChecked();">
+                                                <label class="dropdown-item btn btn-outline-primary" style="border-radius: 0;" for="threeThree">
+                                                    <img src="assets/img/calc/okno_3_3.png" alt="">
+                                                </label>
+    
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-center mx-2">
+                                            <button class="btn win-4" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                            </button>
+                                            <div class="dropdown-menu" style="border-radius: 0;">
+                                                <input type="radio" class="btn-check" name="win-type" id="block" autocomplete="off" onclick="viewChecked();">
+                                                <label class="dropdown-item btn btn-outline-primary" style="border-radius: 0;" for="block">
+                                                    <img src="assets/img/calc/okno_4_1.png" alt="">
+                                                </label>
+                                                <input type="radio" class="btn-check" name="win-type" id="blockOne" autocomplete="off" onclick="viewChecked();">
+                                                <label class="dropdown-item btn btn-outline-primary" style="border-radius: 0;" for="blockOne">
+                                                    <img src="assets/img/calc/okno_4_2.png" alt="">
+                                                </label>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-around justify-content-lg-between flex-wrap ">
+                                    <div class="d-flex flex-column py-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="options" type="checkbox" value="" id="install" onchange="viewChecked()">
+                                            <label class="form-check-label" for="install">
+                                                Монтаж
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="options" type="checkbox" value="" id="mosquitoNet" onchange="viewChecked()">
+                                            <label class="form-check-label" for="mosquitoNet">
+                                                Москитная сетка
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="options" type="checkbox" value="" id="lowTides" onchange="viewChecked()">
+                                            <label class="form-check-label" for="lowTides">
+                                                Отливы
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="options" type="checkbox" value="" id="sills" onchange="viewChecked()">
+                                            <label class="form-check-label" for="sills">
+                                                Подоконник
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="options" type="checkbox" value="" id="slopes" onchange="viewChecked()">
+                                            <label class="form-check-label" for="slopes">
+                                                Откосы
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="price d-flex flex-column flex-nowrap p-2 my-2">
+                                        <div class="align-self-center"><b>Cтоимость окна</b></div>
+                                        <div class="d-flex flex-nowrap align-items-center">
+                                            <p class="mx-1">Стоимость изделия</p>
+                                            <p class="mx-1 fs-6"><span id="priceBase"></span> p</p>
+                                        </div>
+                                        <div class="d-flex flex-nowrap align-items-center">
+                                            <p class="mx-1">Стоимость c опциями</p>
+                                            <p class="mx-1 fs-6"><span id="priceOptions"></span> p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-4 text-uppercase" style="min-height: 300px;">
+                        <!-- card item 2-->
+                        <a
+                            class="card nav-link card-bg-2 text-bg-dark h-100"
+                            href="pages/works.html"
+                        >
+                            <div class="card-body d-flex align-items-end">
+                                <h3 class="card-title">НАШИ РАБОТЫ</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-4 text-uppercase" style="min-height: 300px;">
+                        <!-- card item 3-->
+                        <a 
+                            class="card nav-link card-bg-3 text-bg-dark h-100"
+                            href="pages/products.html"
+                        >
+                            <div class="card-body d-flex align-items-end">
+                                <h3 class="card-title">Продукция</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-7 mb-4 text-uppercase" style="min-height: 300px;">
+                        <!-- card about-->
+                        <a 
+                        class="card nav-link card-bg-1 text-bg-dark h-100"
+                        href="pages/about.html"
+                        >
+                            <div class="card-body d-flex align-items-end">
+                                <h3 class="card-title">о нас</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer text-bg-dark py-lg-4 fixed-bottom">
+            <div class="container">
+                <div class="row align-items-center justify-content-end mx-1">
+                    <div class="col-lg-4 text-lg-start text-uppercase d-none d-lg-block">
+                        <a href="pages/contacts.html" class="contacts">
+                            КОНТАКТЫ
+                        </a>
+                    </div>                  
+                    <div class="col-lg-4 my-2 my-lg-0">
+                        <a
+                            class="btn btn-light btn-social mx-2"
+                            href="https://vk.com/oknogostt"
+                            target="_blank"
+                            aria-label="Vkontakte">
+                            <i class="fab fa-vk fs-4"></i>
+                        </a>
+                        <a
+                            class="btn btn-light btn-social mx-2"
+                            href="#!"
+                            aria-label="Telegram">
+                            <i class="fab fa-telegram fs-4"></i>
+                        </a>
+                        <a
+                            class="btn btn-light btn-social mx-2"
+                            href="#!"
+                            aria-label="e-mail">
+                            <i class="fab fa-at"></i>
+                        </a>
+                        <a
+                            class="btn btn-light btn-social mx-2"
+                            href="tel:+78482617761"
+                            aria-label="phone">
+                            <i class="fa-regular fa-phone"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end text-uppercase" style="color: grey;">
+                        Окно-ГОСТ &copy; 2024
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/calc.js"></script>
+    </body>
 </html>
