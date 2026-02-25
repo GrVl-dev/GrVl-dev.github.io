@@ -165,49 +165,6 @@ header.notfound-bg {
   cursor: pointer;
 }
 
-
-.dropdown-item{
-  cursor: pointer;
-}
-.dropdown-item img{
-  height: 50px;
-}
-.win-2 {
-  background-image: url('../assets/img/calc/okno_2.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  cursor: pointer;
-  border-radius: 0;
-  height: 53px;
-  width: 44px;
-}
-.win-3 {
-  background-image: url('../assets/img/calc/okno_3.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  cursor: pointer;
-  border-radius: 0;
-  height: 53px;
-  width: 64px;
-}
-.win-4 {
-  background-image: url('../assets/img/calc/okno_4.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  cursor: pointer;
-  border-radius: 0;
-  height: 53px;
-  width: 44px;
-}
-
-.price {
-  border: 1px solid lightgrey;
-  background-color: #2b2b2bb6;
-}
-
 .content {
   padding-bottom: 70px;
   min-height: calc(100vh - 350px - 88px);
@@ -222,10 +179,42 @@ header.notfound-bg {
   letter-spacing: 2px;
 }
 
-.footer .contacts{
-  color: grey;
+.row-okna-prices .col {
+  align-self: flex-start;
+}
+.row-okna-prices .col .okna-item {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  padding-top: 0.50rem;
+  padding-bottom: 0.25rem;
+}
+.row-okna-prices .col .img-wrap-ratio {
+  width: 100%;
+  max-height: 80px;
+  line-height: 0;
+}
+.img-okna-ratio {
+  width: 100%;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 80px; /* по умолчанию */
+  object-fit: contain;
+  display: block;
+}
+/* Первый ряд — макс. высота 40px */
+.row-okna-prices .row-okna-first .img-wrap-ratio,
+.row-okna-prices .row-okna-first .img-okna-ratio {
+  max-height: 50px;
+}
+/* Нижний ряд — макс. высота 105px */
+.row-okna-prices .row-okna-last .img-wrap-ratio,
+.row-okna-prices .row-okna-last .img-okna-ratio {
+  max-height: 100px;
 }
 
-.footer .contacts:hover {
-  color: whitesmoke;
+.card-okna-caption {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
 }
