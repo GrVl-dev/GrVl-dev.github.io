@@ -199,19 +199,19 @@ header.notfound-bg {
   width: 100%;
   height: auto !important;
   max-width: 100%;
-  max-height: 80px; /* по умолчанию */
+  max-height: 50px; /* по умолчанию */
   object-fit: contain;
   display: block;
 }
 /* Первый ряд — макс. высота 40px */
 .row-okna-prices .row-okna-first .img-wrap-ratio,
 .row-okna-prices .row-okna-first .img-okna-ratio {
-  max-height: 50px;
+  max-height: 35px;
 }
 /* Нижний ряд — макс. высота 105px */
 .row-okna-prices .row-okna-last .img-wrap-ratio,
 .row-okna-prices .row-okna-last .img-okna-ratio {
-  max-height: 100px;
+  max-height: 70px;
 }
 
 .card-okna-caption {
