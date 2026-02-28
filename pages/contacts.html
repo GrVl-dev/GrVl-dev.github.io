@@ -62,23 +62,24 @@
                                     <div class="card-body bg-dark bg-opacity-75 text-bg-dark h-100">
                                         <p class="card-text"><b>Офис: </b>+7(987)909-14-14</p>
                                         <p class="card-text"><b>Менеджер: </b>+7(8482)61-77-61</p>
-                                        <p class="card-text"><b>Менеджер: </b>+7(927)891-77-61</p>
                                         <p class="card-text"><b>Офис: </b>г. Тольятти, ул. Мира, 133А, ТЦ"КРЫМ", 3 этаж, секция 66</p>
+                                        <p class="card-text"><b>г. Тольятти, ул. Базовая, 6Б</b></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-lg-7">
-                                    <form class="card-body d-flex flex-column h-100 justify-content-evenly needs-validation" novalidate>
+                                    <form class="card-body d-flex flex-column h-100 justify-content-evenly needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
                                         <h5 class="card-title text-uppercase align-self-center">Форма обратной связи</h5>
+                                        <input type="hidden" name="access_key" value="bdfc7c28-130d-453e-9219-ee057a4573d9">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="nameInput" placeholder="" required>
+                                            <input type="text" class="form-control" name="name" id="nameInput" placeholder="" required>
                                             <label for="nameInput">Имя</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="emailInput" placeholder="" required>
+                                            <input type="email" class="form-control" name="email" id="emailInput" placeholder="" required>
                                             <label for="emailInput">Email</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <textarea class="form-control" placeholder="" id="textInput" required></textarea>
+                                            <textarea class="form-control" placeholder="" name="message" id="textInput" required></textarea>
                                             <label for="textInput">Ваше сообщение</label>
                                         </div>
                                         <button type="submit" class="btn btn-secondary">Отправить</button>
